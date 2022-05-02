@@ -1,0 +1,44 @@
+.section-advantages {
+  .slogan {
+    font-weight: 500;
+    font-size: 63px;
+    line-height: 1.17;
+    color: #46ba00;
+    margin-bottom: 27px;
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  max-width: 920px;
+  width: 100%;
+  margin: -60px auto 0;
+  padding-bottom: 195px;
+  position: relative;
+  z-index: 1;
+
+  &__item {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #46ba00;
+    max-width: 250px;
+    width: 100%;
+    padding: 10px;
+
+  }
+
+  &__icon {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 97px;
+    height: 97px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 53px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,54 @@
+.banner {
+  position: relative;
+  padding-top: 116px;
+border-bottom:2px solid #eaeaea;
+  .overlay {
+    position: absolute;
+    width: 50vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
+    z-index: 1;
+  }
+
+  &__wrap-img {
+    position: relative;
+  }
+
+  &__img-shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__link {
+    position: absolute;
+    display: inline-block;
+    color: #eaeaea;
+    font-size: 27px;
+    line-height: 1.18;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &.to-left {
+      text-align: right;
+      left: 0;
+      transform: translate(-100%, -50%);
+    }
+  }
+
+  .big-text {
+    font-weight: 500;
+    font-size: 55px;
+  }
+}

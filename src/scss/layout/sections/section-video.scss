@@ -1,0 +1,74 @@
+.section-video {
+  background-repeat: no-repeat;
+  background-position: center bottom 120px;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 270px;
+}
+
+.desktop {
+  position: relative;
+  display: flex;
+  min-height: 550px;
+  max-width: 876px;
+  padding-bottom: 68px;
+  margin: 0 auto;
+
+  &:after,
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 0;
+  }
+
+  &:before {
+    background-image: url(../assets/img/stand.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 330px;
+    height: 130px;
+  }
+
+  &:after {
+    width: 100vw;
+    height: 1px;
+    background-color: #b3b3b3;
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 30px;
+  }
+
+  .wrap-video {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    top: 25px;
+    border-radius: 17px;
+    padding-top: 49%;
+    overflow: hidden;
+    background: rosybrown;
+  }
+
+  video {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

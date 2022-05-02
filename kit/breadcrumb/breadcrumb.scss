@@ -1,0 +1,65 @@
+.breadcrumb {
+  padding: 24px 0 0;
+  background-color: #E5E5E5;
+  font-size: 12px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+
+  &__item {
+    position: relative;
+    padding-right: 22px;
+
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/svg/chevron-right.svg);
+      width: 16px;
+      height: 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:last-child:before {
+      display: none;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../assets/img/svg/home.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  @include respond-to($xs) {
+    font-size: 8px;
+    margin-bottom: 26px;
+    &__item {
+      padding-right: 17px;
+
+      &:before {
+        width: 10px;
+        height: 10px;
+        right: 3px;
+      }
+    }
+    &__icon {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

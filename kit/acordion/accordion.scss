@@ -1,0 +1,121 @@
+.accordion {
+  background-color: lightgray;
+  padding: 80px 13% 40px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .panel {
+    width: 100%;
+  }
+
+  .open-panel {
+    position: absolute;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    top: 25%;
+    right: 0;
+    border-radius: 50%;
+    background-color: darkblue;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background-image: url(../assets/img/svg/plus.svg);
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .panel {
+    &__heading {
+      position: relative;
+      padding: 20px 35px 20px 0;
+      transition: .7s;
+
+      &_title {
+        margin: 0 0 15px 0;
+        color: darkslategray;
+      }
+    }
+  }
+
+  .panel-collapse {
+    display: none;
+    padding: 5px 0 40px;
+
+    &__body p {
+      line-height: 2;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .open {
+    display: block;
+
+    .open-panel {
+      transition: transform .5s;
+      transform: rotate(-45deg);
+      background-color: gray;
+
+      &:before {
+
+      }
+    }
+  }
+
+  //@include respond-to($md) {
+  //  padding-top: 65px;
+  //  padding-bottom: 30px;
+  //  .panel__heading {
+  //    padding: 15px 32px 15px 0;
+  //    cursor: pointer;
+  //  }
+  //}
+  //@include respond-to($sm) {
+  //  padding: 30px 20px 30px;
+  //  border-radius: 0;
+  //
+  //  .panel__heading {
+  //    padding: 13px 32px 13px 0;
+  //    cursor: pointer;
+  //  }
+  //
+  //  .open-panel {
+  //    width: 26px;
+  //    height: 26px;
+  //    top: 17%;
+  //
+  //    &:before {
+  //      width: 16px;
+  //      height: 16px;
+  //    }
+  //  }
+  //
+  //  .panel-collapse {
+  //    padding: 0;
+  //  }
+  //
+  //  .panel-collapse__body p {
+  //    font-size: 12px;
+  //  }
+  //}
+  //@include respond-to($xs){
+  //  .open-panel {
+  //    width: 20px;
+  //    height: 20px;
+  //    top: 24%;
+  //    &:before {
+  //      width: 13px;
+  //      height: 13px;
+  //    }
+  //  }
+  //}
+}

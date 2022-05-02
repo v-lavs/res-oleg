@@ -1,0 +1,59 @@
+.popup-wrapper {
+  display: none;
+  max-height: 100%;
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1100;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.popup {
+  position: relative;
+  padding-top: 25.12%;
+  width: 50%;
+  overflow: hidden;
+  height: 0;
+  border-radius: 8px;
+
+  .btn-close {
+    position: relative;
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    outline: none;
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
+
+  @include respond-to($sm) {
+    width: 80%;
+    padding-top: 45%;
+  }
+  @include respond-to($xs) {
+    width: 90%;
+    padding-top: 50.62%;
+    border-radius: 3px;
+  }
+}

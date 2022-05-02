@@ -1,0 +1,160 @@
+.section-SARS {
+  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+  padding-top: 147px;
+  padding-bottom: 245px;
+
+  .part_left {
+    width: 45%;
+    padding-right: 130px;
+  }
+
+  .part_right {
+    position: relative;
+    width: 55%;
+    padding-left: 25px;
+  }
+
+  .heading {
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  .text_sm {
+    color: #959595;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .wrap-slider {
+    position: absolute;
+    right: 0;
+    top: -185px;
+    width: 910px;
+    height: 820px;
+    transform: translateX(75%);
+  }
+  .swiper-pagination{
+    display: none;
+  }
+}
+
+.diseases {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 76px;
+  width: max-content;
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    left: 0;
+    top: 15px;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #868686, rgba(0, 0, 0, 0)) 1 0 0 100%;
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 27px;
+    color: #000000;
+    margin-bottom: 45px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #868686;
+      left: -28px;
+      top: 13px;
+    }
+
+    &.active:before {
+      background-color: #54C42D;
+    }
+
+    &:nth-child(2):before {
+      opacity: .8;
+    }
+
+    &:nth-child(3):before {
+      opacity: .7;
+    }
+
+    &:nth-child(4):before {
+      opacity: .55;
+    }
+
+    &:nth-child(5):before {
+      opacity: .4;
+    }
+
+    &:nth-child(6):before {
+      opacity: .3;
+    }
+
+    &_empty:before {
+      opacity: .2;
+    }
+  }
+
+  &-slider {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/diseases/round-bg.png);
+  }
+
+  &__slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__thumb {
+    position: relative;
+    width: 750px;
+    height: 723px;
+    opacity: 0;
+    transition: opacity .35s;
+  }
+
+  &__img {
+    position: fixed;
+    left: 15%;
+    top: 20%;
+    z-index: 1;
+
+    transition: all .35s;
+    &_1 {
+      top: 15%;
+      left: 33%;
+    }
+    &_2{
+      left: 14%;
+      top: 36%;
+    }
+    &_3{
+      top: 64%;
+      left: 37%;
+    }
+  }
+
+}
+
+.swiper-slide-visible.swiper-slide-active {
+  .diseases__thumb {
+    opacity: .85;
+  }
+}

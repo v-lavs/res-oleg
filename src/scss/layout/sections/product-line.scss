@@ -1,0 +1,162 @@
+.product-line {
+  padding-bottom: 196px;
+
+  .heading {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .sub-title {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto 65px;
+    text-align: center;
+  }
+
+  sup {
+    vertical-align: top;
+    font-size: .7em;
+  }
+}
+
+.product-list {
+  overflow: visible;
+  .swiper-wrapper{
+    justify-content: space-between;
+  }
+}
+
+.product-card {
+  position: relative;
+  width: 50%;
+  max-width: 540px;
+
+  &:nth-child(2) {
+    .heading_round {
+      transform: rotate(60deg);
+    }
+
+    .product-card__title {
+      transform: rotate(-60deg);
+    }
+  }
+
+  .heading_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 352px;
+    height: 352px;
+    background-image: url(../assets/img/round1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0 124px 50px;
+    transform: rotate(30deg);
+
+  }
+
+  &__thumb {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    width: 34vw;
+    z-index: 0;
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-top: auto;
+    display: block;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.15;
+    transform: rotate(-30deg);
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .big {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .btn_round {
+    position: absolute;
+    right: 10px;
+    bottom: 225px;
+  }
+  .btn_main{
+    margin: 0 15px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin: 0;
+    }
+  }
+}
+
+@include respond-to($lg) {
+  .product-list {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    .swiper-pagination{
+      display: block!important;
+      height: 10px;
+      bottom: 75px;
+    }
+      .swiper-wrapper{
+        justify-content: flex-start;
+    }
+  }
+
+  .product-card{
+    width: 100%;
+    &__thumb{
+      padding-bottom: 23px;
+    }
+    &__footer{
+      padding-top: 23px;
+    }
+  }
+
+}
+@include respond-to($sm) {
+  .product-card{
+    min-height: 284px;
+    .heading_round{
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@include respond-to($xs){
+  .product-card{
+    height: 100%;
+    &__thumb{
+      all: unset;
+    }
+    .heading_round{
+      display: none;
+    }
+    .btn_main{
+      min-width: 0;
+      width: auto;
+    }
+  }
+}
