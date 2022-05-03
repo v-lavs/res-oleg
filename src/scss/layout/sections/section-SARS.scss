@@ -1,4 +1,5 @@
 .section-SARS {
+  position: relative;
   background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
   padding-top: 147px;
   padding-bottom: 245px;
@@ -23,23 +24,19 @@
     color: #959595;
   }
 
-  //.container {
-  //  display: flex;
-  //}
-
   .wrap-slider {
     position: absolute;
     right: 0;
-    top: -185px;
-    width: 910px;
+    top: -30px;
+    max-width: 910px;
     height: 820px;
-    transform: translateX(75%);
+    transform: translateX(40%);
+    width: 60%;
+  }
   }
   .swiper-pagination{
     display: none;
   }
-}
-
 .diseases {
   position: relative;
   padding-left: 25px;

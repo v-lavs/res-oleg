@@ -1,0 +1,138 @@
+.app-method {
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-bottom: 116px;
+  .heading {
+    margin-bottom: 134px;
+  }
+
+  &__list {
+    padding-bottom: 73px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #46ba00;
+    text-align: center;
+  }
+}
+
+.card-method {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.17;
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    background-color: #a8a8a8;
+    height: 95%;
+    top: 0;
+    right: 0;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &:nth-child(1) {
+    padding-right: 90px;
+  }
+
+  &:nth-child(2) {
+    padding-left: 90px;
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 54px;
+  }
+
+  &__body {
+    display: flex;
+    width: 100%;
+    padding: 6px 0;
+  }
+
+  .col {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+
+    .icon {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      margin-bottom: 10px;
+      width: 125px;
+      height: 125px;
+    }
+
+    &_5 {
+      width: 45%;
+      max-width: 146px;
+      text-align: center;
+      flex-shrink: 0;
+
+      .icon {
+        color: #46ba00;
+        font-size: 136px;
+        line-height: 1.17;
+        font-weight: 500;
+        text-align: left;
+      }
+    }
+
+    &_7 {
+      display: flex;
+      padding-left: 58px;
+    }
+  }
+
+  .time {
+    text-align: center;
+    margin-left: -10px;
+
+    .icon {
+      position: relative;
+      background-size: 46%;
+      border-radius: 50%;
+      background-color: #ffffff;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 82px;
+        height: 82px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #a6a6a6;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+    }
+
+    .sun {
+      background-size: 65%;
+    }
+  }
+}

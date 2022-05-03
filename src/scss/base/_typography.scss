@@ -1,28 +1,38 @@
-.heading{
+.heading {
   font-size: 45px;
   font-weight: 500;
-  &_xl{
+
+  &_xl {
     font-size: 70px;
   }
-  &_lg{
+
+  &_lg {
     font-size: 55px;
   }
-  &_md{
+
+  &_md {
     font-size: 50px;
   }
-  &_sm{
-      font-size: 43px;
-    }
-  &_xs{
+
+  &_sm {
+    font-size: 43px;
+  }
+
+  &_xs {
     font-size: 37px;
   }
 }
 
-.text{
-  &_sm{
+.text {
+  &_xs {
+    font-size: 10px;
+  }
+
+  &_sm {
     font-size: 15px;
   }
-  &_lg{
+
+  &_lg {
     font-size: 26px;
   }
 }
