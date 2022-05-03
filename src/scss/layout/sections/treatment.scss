@@ -6,8 +6,21 @@
 }
 
 .treatment-description {
+  position: relative;
   padding-bottom: 165px;
-
+  &:after{
+    position: absolute;
+    content: '';
+    background: linear-gradient(15deg, #61DB36 0%, #FFFFFF 100%);
+    opacity: 0.86;
+    filter: blur(40px);
+    width: 703px;
+    height: 680px;
+    border-radius: 50%;
+    left: -78%;
+    top: -40%;
+    z-index: -1;
+  }
   ul {
     color: #46BA00;
     font-weight: 500;
@@ -16,6 +29,8 @@
     li{
       &:before{
         top: 16px;
+        width: 8px;
+        height: 8px;
       }
     }
   }
@@ -31,10 +46,12 @@
 
   &__header {
     width: 50%;
-    font-size: 37px;
     padding-right: 21%;
   }
-
+  &__heading{
+    font-size: 37px;
+    font-weight: 400;
+  }
   &__content {
     width: 50%;
   }

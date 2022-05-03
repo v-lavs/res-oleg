@@ -5,8 +5,10 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   overflow: hidden;
+  height: auto;
 }
 
 .text_white {
@@ -27,8 +29,13 @@ body {
 }
 
 .bg-bottom {
-  position: relative;
+  position: absolute;
   background: linear-gradient(180deg, rgba(66, 255, 0, 0) 15%, #48bf00 100%);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 774px;
 
   &:before {
     position: absolute;
@@ -59,6 +66,10 @@ body {
     background-size: auto;
     z-index: 0;
   }
+}
+
+.d-flex {
+  display: flex;
 }
 
 sup {
@@ -104,6 +115,18 @@ sup {
 }
 
 .dynamic-content {
+  h1, h2 {
+    font-weight: 500;
+    //font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  h3, h4 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
   p {
     font-size: 17px;
     line-height: 1.4;
@@ -115,7 +138,7 @@ sup {
   }
 
   ul {
-    padding-left: 22px;
+    padding-left: 15px;
     font-size: 17px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -128,8 +151,8 @@ sup {
         position: absolute;
         content: '';
         display: block;
-        width: 8px;
-        height: 8px;
+        width: 4px;
+        height: 4px;
         border-radius: 50%;
         background-color: currentColor;
         left: 0;
@@ -138,13 +161,16 @@ sup {
     }
 
   }
+
   ol {
     counter-reset: list;
     font-size: 17px;
   }
+
   ol li {
     counter-increment: list;
   }
+
   ol li::before {
     content: counter(list) ". ";
   }

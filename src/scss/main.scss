@@ -1,19 +1,15 @@
 @import 'utils/variables';
 @import 'utils/mixins';
-
 @import '../lib/swiper/swiper-bundle.min';
-
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/animation';
-
 @import 'components/button';
 @import 'components/nav';
 @import 'components/slider';
 @import 'components/tab';
 @import 'components/accordion';
-
 @import 'layout/layout';
 @import 'layout/grid';
 @import 'layout/header';
@@ -28,8 +24,11 @@
 @import 'layout/sections/section-SARS';
 @import 'layout/sections/intro';
 @import 'layout/sections/treatment';
+@import 'layout/sections/actions';
+@import 'layout/sections/scientific-works';
 
 
 @import 'pages/page-symptom';
+@import 'pages/specialists';
 @import 'pages/404';
 

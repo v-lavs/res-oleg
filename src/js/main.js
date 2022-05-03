@@ -83,6 +83,35 @@ $(document).ready(function () {
         resizeId = setTimeout(handleResponsive, 500);
     });
 
+    //ACTIONS SLIDER
+    let titles = document.querySelectorAll('.actions .wrap-slider .swiper-slide');
+    let title = [];
+    titles.forEach(function(element) {
+        title.push(element.dataset.title);
+    });
+
+    if ($('.actions__slider').get(0)) {
+
+        const actionsSlider = new Swiper(".actions__slider", {
+            spaceBetween: 130,
+            speed: 3000,
+            slidesPerView: 1.20,
+            slidesOffsetAfter: 250,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + title[index] + '</span>';
+                },
+            },
+
+            navigation: {
+                nextEl: ".wrap-slider .swiper-button-next",
+                prevEl: ".wrap-slider .swiper-button-prev",
+            },
+        });
+    }
+
 
 // VIDEO PLAY
 
@@ -105,7 +134,6 @@ $(document).ready(function () {
             promotionVideo.controls = false
         });
     }
-
 
 
     // HOVER BLOCK
@@ -152,6 +180,7 @@ $(document).ready(function () {
 
     //PARALLAX
     document.addEventListener("mousemove", parallax);
+
     function parallax(event) {
         this.querySelectorAll(".parallax-wrap ball").forEach((shift) => {
             const position = shift.getAttribute("value");
