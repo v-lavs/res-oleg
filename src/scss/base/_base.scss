@@ -204,31 +204,41 @@ sup {
   }
 
   table {
+    width: 100%;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    th, td {
-      width: max-content;
+    margin-bottom: 43px;
+
+    td {
       padding: 11px 30px;
       border: 1px solid #cfcfcf;
       text-align: center;
     }
-    thead{
+
+    thead {
       background: #46ba00;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.5;
+
       text-align: center;
       color: #ffffff;
+
+      th {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        white-space: nowrap;
+      }
     }
-caption{
-  width: 80%;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.28;
-  padding-top: 15px;
-  padding-bottom: 25px;
-  color: #46BA00;
-  text-align: left;
-}
+
+    caption {
+      width: 80%;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 1.28;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      color: #46BA00;
+      text-align: left;
+    }
+
     caption-side: top;
   }
 

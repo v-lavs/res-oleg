@@ -1003,13 +1003,13 @@ sup {
 }
 
 .dynamic-content table {
+  width: 100%;
   font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 43px;
   caption-side: top;
 }
 
-.dynamic-content table th,
 .dynamic-content table td {
-  width: max-content;
   padding: 11px 30px;
   border: 1px solid #cfcfcf;
   text-align: center;
@@ -1017,11 +1017,15 @@ sup {
 
 .dynamic-content table thead {
   background: #46ba00;
+  text-align: center;
+  color: #ffffff;
+}
+
+.dynamic-content table thead th {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
-  color: #ffffff;
+  white-space: nowrap;
 }
 
 .dynamic-content table caption {
@@ -1143,15 +1147,15 @@ sup {
 
 .diseases__thumb:hover .diseases__img {
   transform-origin: 0 50%;
-  animation: flying 17s ease-in-out -4.66667s infinite;
+  animation: flying 12s ease-in-out -1.6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 53s ease-in-out -5.86667s infinite;
+  animation: flying 14s ease-in-out -8.6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -22s ease-in-out -7.06667s infinite;
+  animation: flying -37s ease-in-out -1.6s infinite;
 }
 
 .btn {
