@@ -879,18 +879,22 @@ body {
   z-index: 0;
 }
 
-.bg-gray {
+.bg-grey {
   position: relative;
 }
 
-.bg-gray:before {
-  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
-  height: 340px;
+.bg-grey:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+  height: 350px;
   width: 100vw;
   left: 50%;
-  top: 110px;
   transform: translateX(-50%);
-  z-index: 1;
+  right: 0;
+  top: 50%;
+  z-index: -1;
 }
 
 .d-flex {
@@ -1083,15 +1087,15 @@ sup {
 
 .diseases__thumb:hover .diseases__img {
   transform-origin: 0 50%;
-  animation: flying 25s ease-in-out -6.13333s infinite;
+  animation: flying 23s ease-in-out -4.66667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 41s ease-in-out -10.33333s infinite;
+  animation: flying 48s ease-in-out -6.66667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -17s ease-in-out -7.73333s infinite;
+  animation: flying -31s ease-in-out -1.66667s infinite;
 }
 
 .btn {
@@ -1322,23 +1326,9 @@ sup {
   width: 100%;
 }
 
-.tabs:after,
-.tabs:before {
+.tabs:after {
   position: absolute;
   content: '';
-  z-index: -1;
-}
-
-.tabs:before {
-  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
-  height: 340px;
-  width: 100vw;
-  left: 50%;
-  top: 110px;
-  transform: translateX(-50%);
-}
-
-.tabs:after {
   background: linear-gradient(15deg, #61DB36 0%, #FFFFFF 100%);
   opacity: 0.86;
   filter: blur(40px);
@@ -1347,6 +1337,7 @@ sup {
   border-radius: 50%;
   right: -40%;
   bottom: 12%;
+  z-index: -1;
 }
 
 .tabs__nav {
@@ -2348,9 +2339,12 @@ sup {
 
 .section-SARS {
   position: relative;
-  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
   padding-top: 147px;
   padding-bottom: 245px;
+}
+
+.section-SARS.bg-grey:before {
+  top: 0;
 }
 
 .section-SARS .part_left {
@@ -2906,11 +2900,16 @@ sup {
   text-align: center;
 }
 
+.app-method__list {
+  margin: 0 -90px;
+}
+
 .card-method {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   line-height: 1.17;
+  padding: 0 90px;
 }
 
 .card-method:after {
@@ -2926,14 +2925,6 @@ sup {
 
 .card-method:last-child:after {
   display: none;
-}
-
-.card-method:nth-child(1) {
-  padding-right: 90px;
-}
-
-.card-method:nth-child(2) {
-  padding-left: 90px;
 }
 
 .card-method__header {
@@ -3024,6 +3015,118 @@ sup {
 
 .card-method .time .sun {
   background-size: 65%;
+}
+
+.app-method_solution .app-method__list {
+  margin: 0 -58px;
+}
+
+.app-method_solution .card-method {
+  width: 33.33%;
+  max-width: 435px;
+  padding: 0 58px;
+}
+
+.app-method_solution .card-method__body {
+  flex-direction: column;
+}
+
+.app-method_solution .card-method .col {
+  display: flex;
+}
+
+.app-method_solution .card-method .col:first-child {
+  align-items: flex-end;
+  margin-bottom: 17px;
+}
+
+.app-method_solution .card-method .col:last-child span {
+  padding: 10px 0;
+}
+
+.app-method_solution .card-method .time {
+  display: inline-block;
+  margin-left: -13px;
+}
+
+.app-method_solution .card-method .number {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 82px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.app-method_solution .card-method span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 55px;
+}
+
+.app-method_solution .card-method .icon {
+  width: 85px;
+  height: 85px;
+}
+
+.app-method_solution .card-method .icon:before {
+  width: 56px;
+  height: 56px;
+}
+
+.app-method_solution .card-method .icon_drop {
+  width: 46px;
+  height: 72px;
+}
+
+.section-effect {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.section-effect__content {
+  flex: 0 0 100%;
+}
+
+.section-effect__body {
+  width: 60%;
+}
+
+.section-effect__wrap-img {
+  flex: 0 0 40%;
+  padding-right: 6.5%;
+  transform: translateX(-100%);
+}
+
+.section-effect__wrap-img_mob {
+  display: none;
+}
+
+.section-effect__wrap-img img {
+  max-width: 100%;
+}
+
+.section-effect {
+  display: flex;
+  align-items: center;
+}
+
+.section-effect__content {
+  flex: 0 0 100%;
+}
+
+.section-effect__body {
+  width: 60%;
+}
+
+.section-effect__wrap-img {
+  flex: 0 0 40%;
+  padding-right: 6.5%;
+  transform: translateX(-100%);
+}
+
+.section-effect__wrap-img img {
+  max-width: 100%;
 }
 
 .specialists .section-intro {

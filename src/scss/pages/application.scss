@@ -1,19 +1,22 @@
 .application {
   .section-intro {
     padding-bottom: 80px;
-    &__header{
+
+    &__header {
       width: 40%;
       margin-bottom: 63px;
       float: left;
     }
-    &__wrap-img{
+
+    &__wrap-img {
       position: relative;
       padding-top: 60%;
       width: 60%;
       float: right;
       margin-bottom: 50px;
     }
-    &__img{
+
+    &__img {
       position: absolute;
       left: 0;
       right: 0;
@@ -23,45 +26,53 @@
       width: 100%;
       object-fit: cover;
     }
-    &__text{
+
+    &__text {
       max-width: 710px;
       width: 100%;
       text-align: center;
       margin: 0 auto;
     }
-    &__footer{
+
+    &__footer {
       display: flex;
       justify-content: center;
       width: 100%;
       padding-bottom: 30px;
-      .btn_main{
+
+      .btn_main {
         position: relative;
         margin: 0 15px;
-        &:first-child{
+
+        &:first-child {
           margin-left: 0;
         }
-        &:first-child:before{
+
+        &:first-child:before {
           position: absolute;
           content: '';
           display: block;
           width: 2px;
           height: 30px;
           top: 50%;
-          right:-17px;
+          right: -17px;
           transform: translateY(-50%);
           background-color: #cfcfcf;
         }
-        &:last-child{
+
+        &:last-child {
           margin: 0;
         }
       }
     }
+
     .big-text {
       font-weight: 600;
       font-size: 77px;
       margin-bottom: 0;
       line-height: .8;
     }
+
     .sub-title {
       font-weight: 600;
       font-size: 25px;
@@ -74,19 +85,23 @@
     display: block;
     width: 40%;
     margin: 0;
-    &__item{
+
+    &__item {
       display: flex;
       align-items: center;
       text-align: left;
       max-width: 374px;
     }
-    &__icon{
+
+    &__icon {
       width: 91px;
       height: 91px;
       flex-shrink: 0;
     }
-    &__text{
+
+    &__text {
       padding: 0 25px;
     }
   }
+
 }

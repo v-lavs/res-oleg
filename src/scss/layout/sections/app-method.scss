@@ -1,6 +1,7 @@
 .app-method {
   font-feature-settings: 'pnum' on, 'lnum' on;
   padding-bottom: 116px;
+
   .heading {
     margin-bottom: 134px;
   }
@@ -15,6 +16,9 @@
     color: #46ba00;
     text-align: center;
   }
+  &__list{
+    margin: 0 -90px;
+  }
 }
 
 .card-method {
@@ -22,6 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   line-height: 1.17;
+  padding: 0 90px;
 
   &:after {
     position: absolute;
@@ -36,14 +41,6 @@
 
   &:last-child:after {
     display: none;
-  }
-
-  &:nth-child(1) {
-    padding-right: 90px;
-  }
-
-  &:nth-child(2) {
-    padding-left: 90px;
   }
 
   &__header {
@@ -133,6 +130,70 @@
 
     .sun {
       background-size: 65%;
+    }
+  }
+}
+
+.app-method_solution {
+  .app-method__list{
+    margin: 0 -58px;
+  }
+  .card-method {
+    width: 33.33%;
+    max-width: 435px;
+    padding: 0 58px;
+
+    &__body {
+      flex-direction: column;
+    }
+
+    .col {
+      display: flex;
+
+      &:first-child {
+        align-items: flex-end;
+        margin-bottom: 17px;
+      }
+      &:last-child{
+        span{
+          padding: 10px 0;
+        }
+      }
+
+    }
+
+    .time {
+      display: inline-block;
+      margin-left: -13px;
+    }
+
+    .number {
+      display: inline-block;
+      flex-shrink: 0;
+      width: 82px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    span {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 55px;
+    }
+
+    .icon {
+      width: 85px;
+      height: 85px;
+
+      &:before {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    .icon_drop {
+      width: 46px;
+      height: 72px;
     }
   }
 }

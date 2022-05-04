@@ -1,8 +1,10 @@
 .section-SARS {
   position: relative;
-  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
   padding-top: 147px;
   padding-bottom: 245px;
+  &.bg-grey:before{
+    top: 0;
+  }
 
   .part_left {
     width: 45%;

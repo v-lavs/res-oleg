@@ -1,20 +1,9 @@
 .tabs {
   position: relative;
   width: 100%;
-  &:after,
-  &:before{
+  &:after{
     position: absolute;
     content: '';
-    z-index: -1;  }
-  &:before{
-    background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
-    height: 340px;
-    width: 100vw;
-    left: 50%;
-    top: 110px;
-    transform: translateX(-50%);
-  }
-  &:after{
     background: linear-gradient(15deg, #61DB36 0%, #FFFFFF 100%);
     opacity: 0.86;
     filter: blur(40px);
@@ -23,6 +12,7 @@
     border-radius: 50%;
     right: -40%;
     bottom: 12%;
+    z-index: -1;
   }
 
   &__nav {
@@ -108,5 +98,8 @@
       transition: opacity .5s ease-in;
       z-index: 2;
     }
+  }
+  .bg-grey:before{
+
   }
 }
