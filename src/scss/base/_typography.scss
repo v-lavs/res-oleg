@@ -1,7 +1,9 @@
 .heading {
   font-size: 45px;
   font-weight: 500;
-
+  &_xxl {
+    font-size: 79px;
+  }
   &_xl {
     font-size: 70px;
   }
