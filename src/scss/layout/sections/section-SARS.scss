@@ -77,6 +77,10 @@
       top: 13px;
     }
 
+    &.active{
+      color: #46ba00;
+    }
+
     &.active:before {
       background-color: #54C42D;
     }

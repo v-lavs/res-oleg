@@ -1,17 +1,55 @@
-.page-disease{
+.page-disease {
   padding-top: 137px;
-  .heading_xxl{
+
+  .heading_xxl {
     padding-top: 67px;
     margin-bottom: 18px;
   }
-  .diseases__thumb{
-    float: right;
-    opacity: 1;
-    background: mistyrose;
-  }
-  article{
-    p{
+
+  article {
+
+    p {
 
     }
   }
 }
+
+.disease {
+  &__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    max-width: 580px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    height: 580px;
+    float: right;
+    background-color: mistyrose;
+  }
+
+  &__img-wrap {
+    position: relative;
+    width: 75%;
+    height: 415px;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+
+  .swiper-slide-visible.swiper-slide-active {
+    .diseases__thumb {
+      opacity: .85;
+    }
+  }

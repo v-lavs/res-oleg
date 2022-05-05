@@ -835,8 +835,21 @@ body {
   color: #dedede;
 }
 
-.bg-green {
-  background-image: linear-gradient(0deg, rgba(94, 226, 47, 0) 25%, #48bf00 100%);
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+.bg-green:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1511px;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, rgba(94, 226, 47, 0) 0%, #48BF00 100%);
+  z-index: -1;
 }
 
 .bg-bottom {
@@ -1050,34 +1063,6 @@ sup {
   text-align: left;
 }
 
-.dynamic-content figure {
-  display: table;
-  padding: 20px 0;
-  margin: 0 0 20px 0;
-  max-width: 100vw;
-}
-
-.dynamic-content figure.align-right {
-  float: right;
-  padding-left: 70px;
-  background: mistyrose;
-}
-
-.dynamic-content figure.align-left {
-  float: left;
-  padding-right: 70px;
-  background: lightskyblue;
-}
-
-.dynamic-content figure > figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  max-width: 80%;
-  padding-top: 20px;
-  min-height: 84px;
-  background: greenyellow;
-}
-
 .dynamic-content img.align-right {
   float: right;
   margin-left: 75px;
@@ -1177,15 +1162,16 @@ sup {
 
 .diseases__thumb:hover .diseases__img {
   transform-origin: 0 50%;
-  animation: flying 11s ease-in-out -3.26667s infinite;
+  transition: all .35s;
+  animation: flying 25s ease-in-out -6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 56s ease-in-out -5.33333s infinite;
+  animation: flying 45s ease-in-out -6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -29s ease-in-out -1.66667s infinite;
+  animation: flying -33s ease-in-out -4.4s infinite;
 }
 
 .btn {
@@ -1208,7 +1194,7 @@ sup {
 .btn_main:hover,
 .btn_main:focus {
   color: #ffffff;
-  background-color: #3a8f07;
+  background-color: #54C42D;
 }
 
 .btn_light {
@@ -1220,6 +1206,11 @@ sup {
   color: #ffffff;
   background-color: #54C42D;
   box-shadow: 0 0 18px rgba(84, 196, 45, 0.56);
+}
+
+.btn_green:hover,
+.btn_green:focus {
+  background-color: #3a8f07;
 }
 
 .btn_border {
@@ -1262,6 +1253,22 @@ sup {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.close {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.close svg {
+  width: 100%;
+  height: auto;
 }
 
 .menu {
@@ -1600,6 +1607,99 @@ sup {
   opacity: 0;
 }
 
+.popup {
+  position: fixed;
+  height: 80%;
+  overflow: scroll;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Raleway", sans-serif;
+  z-index: 1500;
+  font-size: 14px;
+  padding-bottom: 10px;
+  max-width: 950px;
+  width: 100%;
+}
+
+.popup__header {
+  position: relative;
+  padding: 20px;
+  background-color: #54C42D;
+  color: #fff;
+  text-align: center;
+}
+
+.popup__header h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+}
+
+.popup__body {
+  background: #fff;
+  padding: 20px;
+}
+
+.popup__contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.popup__contact-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.popup__contact-item img {
+  max-height: 200px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.popup__contact-block {
+  background-color: #54C42D;
+  color: #fff;
+  padding: 15px;
+}
+
+.popup__content {
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.popup__logo {
+  display: inline-block;
+  width: 175px;
+  height: auto;
+}
+
+.popup__logo img {
+  width: 100%;
+}
+
+.popup__footer {
+  text-align: center;
+}
+
+.popup .close {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
 .container {
   width: 100%;
   max-width: 1400px;
@@ -1883,7 +1983,7 @@ sup {
   height: 478px;
   left: 0;
   top: -15%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .reasons .header {
@@ -1911,19 +2011,21 @@ sup {
   padding-bottom: 85px;
 }
 
-.reasons .parallax-wrap {
+.reasons .mouse-parallax {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   overflow: hidden;
+  z-index: 1;
 }
 
-.reasons .layer {
+.reasons .mouse-parallax__bg {
   position: absolute;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 .reasons__content {
@@ -1933,7 +2035,9 @@ sup {
 }
 
 .reasons__img {
+  position: relative;
   width: 100%;
+  z-index: 2;
 }
 
 .reasons__item {
@@ -1988,7 +2092,7 @@ sup {
 .ball_md {
   width: 560px;
   height: 560px;
-  top: -50%;
+  top: -40%;
   right: -20%;
   background: linear-gradient(60deg, #61DB36 0%, #E2FF76 100%);
 }
@@ -1998,6 +2102,10 @@ sup {
   height: 270px;
   top: 27%;
   right: 6%;
+}
+
+.application .bg-green:after {
+  height: 1129px;
 }
 
 .product-line {
@@ -2511,6 +2619,10 @@ sup {
   top: 13px;
 }
 
+.diseases__item.active {
+  color: #46ba00;
+}
+
 .diseases__item.active:before {
   background-color: #54C42D;
 }
@@ -2763,10 +2875,6 @@ sup {
   margin: 0 !important;
   opacity: initial;
   color: rgba(0, 0, 0, 0.2);
-}
-
-.actions .swiper-pagination .swiper-pagination-bullet:last-child {
-  display: none;
 }
 
 .actions .swiper-pagination .swiper-pagination-bullet:before {
@@ -3242,6 +3350,27 @@ sup {
   font-weight: 600;
 }
 
+.article .block-imgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article .block-imgs figure {
+  display: table;
+  padding: 20px 0;
+  margin: 0 0 20px 0;
+  max-width: 503px;
+  width: 45%;
+}
+
+.article .block-imgs figure > figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  max-width: 80%;
+  padding-top: 20px;
+  min-height: 84px;
+}
+
 .article__author {
   font-weight: 500;
   font-size: 13px;
@@ -3259,10 +3388,40 @@ sup {
   margin-bottom: 18px;
 }
 
-.page-disease .diseases__thumb {
+.disease__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  max-width: 580px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  height: 580px;
   float: right;
-  opacity: 1;
-  background: mistyrose;
+  background-color: mistyrose;
+}
+
+.disease__img-wrap {
+  position: relative;
+  width: 75%;
+  height: 415px;
+}
+
+.disease__img-wrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.swiper-slide-visible.swiper-slide-active .diseases__thumb {
+  opacity: .85;
 }
 
 .specialists .section-intro {
@@ -3603,6 +3762,11 @@ sup {
 }
 
 @media only screen and (max-width: 767px) {
+  .popup__contact-item {
+    max-width: 307px;
+    flex: 0 0 100%;
+  }
+
   .container {
     max-width: 580px;
   }
@@ -3650,6 +3814,14 @@ sup {
 }
 
 @media only screen and (max-width: 420px) {
+  .popup__contact-item {
+    max-width: 100%;
+  }
+
+  .popup__header h2 {
+    font-size: 23px;
+  }
+
   .container {
     width: 100%;
     padding: 0 10px;

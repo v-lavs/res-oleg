@@ -41,9 +41,6 @@
       margin: 0 !important;
       opacity: initial;
       color: rgba(0, 0, 0, .2);
-      &:last-child{
-        display: none;
-      }
 
       &:before {
         position: absolute;

@@ -86,7 +86,7 @@ $(document).ready(function () {
     //ACTIONS SLIDER
     let titles = document.querySelectorAll('.actions .wrap-slider .swiper-slide');
     let title = [];
-    titles.forEach(function(element) {
+    titles.forEach(function (element) {
         title.push(element.dataset.title);
     });
 
@@ -179,17 +179,15 @@ $(document).ready(function () {
     }, 300);
 
     //PARALLAX
-    document.addEventListener("mousemove", parallax);
 
-    function parallax(event) {
-        this.querySelectorAll(".parallax-wrap ball").forEach((shift) => {
-            const position = shift.getAttribute("value");
-            const x = (window.innerWidth - event.clientX * position) / 90;
-            const y = (window.innerHeight - event.clientY * position) / 90;
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
 
-            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        });
-    }
+
+        var scene2 = document.getElementById('scene2');
+        var parallaxInstance = new Parallax(scene2);
+
+
 
 //    TABS
     const tabLink = $('.tabs__nav-link');

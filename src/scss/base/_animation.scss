@@ -70,17 +70,19 @@
 //    transform: translate(0, 0) rotate(-5deg);
 //  }
 //}
-.diseases__thumb:hover{
-  .diseases__img{
+
+.diseases__thumb:hover {
+  .diseases__img {
     transform-origin: 0 50%;
-    animation:  flying (random(20)+10)+s ease-in-out (random(100)/-15)+s infinite;
+    transition: all .35s;
+    animation: flying (random(20)+10)+s ease-in-out (random(100)/-15)+s infinite;
 
     &_2 {
-      animation:  flying (random(50)+10)+s ease-in-out (random(160)/-15)+s infinite;
+      animation: flying  (random(50)+10)+s ease-in-out (random(160)/-15)+s infinite;
     }
 
     &_3 {
-      animation:  flying (random(30)-45)+s ease-in-out (random(130)/-15)+s infinite;
+      animation: flying (random(30)-45)+s ease-in-out (random(130)/-15)+s infinite;
     }
 
   }
