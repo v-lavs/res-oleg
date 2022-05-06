@@ -1163,15 +1163,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 0 50%;
   transition: all .35s;
-  animation: flying 13s ease-in-out -5.33333s infinite;
+  animation: flying 26s ease-in-out -3.53333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 43s ease-in-out -0.4s infinite;
+  animation: flying 45s ease-in-out -5.93333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -25s ease-in-out -4.46667s infinite;
+  animation: flying -20s ease-in-out -3.73333s infinite;
 }
 
 .btn {
@@ -1954,6 +1954,16 @@ sup {
   padding: 18px 34px 19px;
 }
 
+.footer .disclaimer path {
+  fill: #7ed24c;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footer .disclaimer.text-white path {
+  fill: #ffffff;
+}
+
 .footer .disclaimer svg {
   width: 100%;
 }
@@ -2450,7 +2460,16 @@ sup {
   top: 0;
   bottom: 0;
   background: linear-gradient(270deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: transform 2.5s;
+  transition: transform 2.5s;
   z-index: 1;
+}
+
+.banner .overlay.active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .banner__wrap-img {
@@ -3381,11 +3400,100 @@ sup {
 
 .page-disease {
   padding-top: 137px;
+  min-height: 630px;
 }
 
-.page-disease .heading_xxl {
-  padding-top: 67px;
-  margin-bottom: 18px;
+.page-disease .top-content {
+  min-height: 630px;
+  align-items: center;
+}
+
+.page-disease .part {
+  width: 50%;
+}
+
+.page-disease .part_left {
+  padding-right: 60px;
+}
+
+.page-disease .part_right {
+  position: relative;
+  min-height: 630px;
+}
+
+.page-disease .diseases {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 630px;
+  padding: 50px 0 50px 50px;
+  opacity: .85;
+}
+
+.page-disease .diseases__thumb {
+  max-width: 580px;
+  width: 100%;
+  height: 580px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.page-disease .diseases__thumb:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: mistyrose;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/img/diseases/round-bg.png);
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  top: -50px;
+  z-index: -1;
+}
+
+.page-disease .diseases__img-wrap {
+  position: relative;
+  width: 75%;
+  height: 415px;
+}
+
+.page-disease .diseases__img-wrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.page-disease .diseases__img {
+  position: fixed;
+  left: 15%;
+  top: 20%;
+  z-index: 1;
+}
+
+.page-disease .diseases__img_1 {
+  width: 50%;
+  top: 15%;
+  left: 33%;
+}
+
+.page-disease .diseases__img_2 {
+  width: 20%;
+  left: 14%;
+  top: 36%;
+}
+
+.page-disease .diseases__img_3 {
+  width: 30%;
+  top: 64%;
+  left: 37%;
 }
 
 .disease-article .content-block {

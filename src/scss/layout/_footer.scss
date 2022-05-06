@@ -54,6 +54,14 @@
     height: 16vh;
     z-index: 500;
     padding: 18px 34px 19px;
+    path {
+      fill: #7ed24c;
+      -webkit-transition: .5s;
+      transition: .5s;
+    }
+    &.text-white path{
+      fill: #ffffff;
+    }
     svg {
       width: 100%;
     }

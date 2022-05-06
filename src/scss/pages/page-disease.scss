@@ -1,22 +1,109 @@
 .page-disease {
   padding-top: 137px;
+  min-height: 630px;
 
-  .heading_xxl {
-    padding-top: 67px;
-    margin-bottom: 18px;
+  .top-content {
+    min-height: 630px;
+    align-items: center;
   }
 
+  .part {
+    width: 50%;
+
+    &_left {
+      padding-right: 60px;
+    }
+
+    &_right {
+      position: relative;
+      min-height: 630px;
+    }
+  }
+  .diseases {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50vw;
+    height: 630px;
+    padding: 50px 0 50px 50px;
+    opacity: .85;
+    &__thumb {
+
+      max-width: 580px;
+      width: 100%;
+      height: 580px;
+      border-radius: 50%;
+      overflow: hidden;
+      &:before{
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: mistyrose;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../assets/img/diseases/round-bg.png);
+        left: -50px;
+        right: -50px;
+        bottom: -50px;
+        top: -50px;
+        z-index: -1;
+      }
+
+    }
+
+    &__img-wrap {
+      position: relative;
+      width: 75%;
+      height: 415px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &__img{
+
+      position: fixed;
+      left: 15%;
+      top: 20%;
+      z-index: 1;
+
+
+      &_1{
+        width: 50%;
+        top: 15%;
+        left: 33%;
+      }
+      &_2{
+        width: 20%;
+        left: 14%;
+        top: 36%;
+      }
+      &_3{
+        width: 30%;
+        top: 64%;
+        left: 37%;
+      }
+    }
+  }
 }
 
 .disease-article {
-  .content-block{
+  .content-block {
     margin-bottom: 55px;
   }
-  .lists-block{
+
+  .lists-block {
     display: flex;
     justify-content: space-between;
 
-    ul{
+    ul {
       max-width: 527px;
       width: 45%;
       background: #f5fff3;
@@ -25,6 +112,7 @@
       padding: 20px;
       line-height: 1.8;
       margin-bottom: 30px;
+
       > li {
         position: relative;
         padding-left: 22px;
@@ -43,6 +131,7 @@
       }
     }
   }
+
   h1, h2 {
     font-weight: 500;
     font-size: 79px;
@@ -69,47 +158,10 @@
 
   p {
     margin-bottom: 22px;
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
 }
 
-//.disease {
-//  &__thumb {
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    background-repeat: no-repeat;
-//    background-size: cover;
-//    background-position: center;
-//    width: 50%;
-//    max-width: 580px;
-//    margin-left: 60px;
-//    margin-bottom: 60px;
-//    height: 580px;
-//    float: right;
-//    background-color: mistyrose;
-//  }
-//
-//  &__img-wrap {
-//    position: relative;
-//    width: 75%;
-//    height: 415px;
-//
-//    img {
-//      height: 100%;
-//      width: 100%;
-//      object-fit: cover;
-//      left: 0;
-//      top: 0;
-//      bottom: 0;
-//      right: 0;
-//    }
-//  }
-//}
-//.swiper-slide-visible.swiper-slide-active {
-//  .diseases__thumb {
-//    opacity: .85;
-//  }
-//}

@@ -16,6 +16,13 @@ function destroySwiper(sliderInstance) {
 }
 
 $(document).ready(function () {
+    $('.banner').mousemove(function () {
+        const overlay = $('.banner .overlay');
+        if (!overlay.hasClass('active')) {
+            overlay.addClass('active');
+        }
+    });
+
     //MOBILE MENU
     const nav = $('.header__nav');
 
@@ -180,33 +187,35 @@ $(document).ready(function () {
 
     //PARALLAX
 
-        var scene = document.getElementById('scene');
+    var scene = document.getElementById('scene');
+
+    if (scene) {
         var parallaxInstance = new Parallax(scene);
+    }
 
+    var scene2 = document.getElementById('scene2');
 
-        var scene2 = document.getElementById('scene2');
+    if (scene2) {
         var parallaxInstance = new Parallax(scene2);
-
-
+    }
 
 //    TABS
-    const tabLink = $('.tabs__nav-link');
-    tabLink.on('click', function (e) {
+    const tabContentItem = $('.tabs__content-item');
+
+    $('.tabs__nav-link').on('click', function (e) {
+        e.preventDefault();
+
         $('.tabs__nav-link').removeClass('active');
+        tabContentItem.removeClass('active');
+
         $(this).addClass('active');
 
+        $($(this).attr('href')).addClass('active');
     });
 
-    const tabContentItem = $('.tabs__content-item');
-    tabLink.click(function (e) {
-        e.preventDefault();
-        tabLink.removeClass('active');
-        tabContentItem.removeClass('active');
-        $(e.target).addClass('active');
-        $($(e.currentTarget).attr('href')).addClass('active');
-    });
 
     //ACCORDION
+
     $('.accordion .panel__heading').on('click', function () {
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
@@ -268,11 +277,14 @@ $(document).ready(function () {
     //
     // window.requestAnimationFrame(animateDiv);
 
-
-    // window.onscroll = function(ev) {
-    //     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    //         alert("you're at the bottom of the page");
-    //     }
-    // };
+    $(window).on('scroll', function () {
+        if ((window.innerHeight + $(window).scrollTop() + 400) >= $(document).outerHeight()) {
+            $('.disclaimer').addClass('text-white');
+        } else {
+            if ($('.disclaimer').hasClass('text-white')) {
+                $('.disclaimer').removeClass('text-white');
+            }
+        }
+    });
 });
 
