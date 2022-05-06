@@ -88,6 +88,7 @@ $(document).ready(function () {
     window.addEventListener('resize', function () {
         clearTimeout(resizeId);
         resizeId = setTimeout(handleResponsive, 500);
+        initTabsSlider();
     });
 
     //ACTIONS SLIDER
@@ -213,6 +214,37 @@ $(document).ready(function () {
         $($(this).attr('href')).addClass('active');
     });
 
+    function initTabsSlider() {
+        let tabsSlider;
+
+        function setActive() {
+            $(this.slides).removeClass('active');
+            tabContentItem.removeClass('active');
+
+            const $currSlide = $(this.slides[this.activeIndex]);
+            $currSlide.addClass('active');
+            $($currSlide.attr('href')).addClass('active')
+        }
+
+        if ($('.tabs-slider').length) {
+            if ($(window).width() <= 991) {
+                tabsSlider = new Swiper('.tabs-slider', {
+                    spaceBetween: 30,
+                    slidesPerView: 'auto',
+                    initialSlide: 1,
+                    on: {
+                        init: setActive
+                    }
+                });
+
+                tabsSlider.on('slideChange', setActive);
+            } else {
+                destroySwiper(tabsSlider);
+            }
+        }
+    }
+
+    initTabsSlider();
 
     //ACCORDION
 

@@ -1,3 +1,7 @@
+.tabs-slider {
+  overflow: visible;
+}
+
 .tabs {
   position: relative;
   width: 100%;
@@ -99,7 +103,19 @@
       z-index: 2;
     }
   }
-  .bg-grey:before{
+  @include respond-to($md) {
+    .tabs__nav {
+      justify-content: flex-start;
+      width: auto;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @include respond-to($sm) {
 
   }
 }
