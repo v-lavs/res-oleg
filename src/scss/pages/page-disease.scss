@@ -6,50 +6,110 @@
     margin-bottom: 18px;
   }
 
-  article {
-
-    p {
-
-    }
-  }
 }
 
-.disease {
-  &__thumb {
+.disease-article {
+  .content-block{
+    margin-bottom: 55px;
+  }
+  .lists-block{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    max-width: 580px;
-    margin-left: 60px;
-    margin-bottom: 60px;
-    height: 580px;
-    float: right;
-    background-color: mistyrose;
+    justify-content: space-between;
+
+    ul{
+      max-width: 527px;
+      width: 45%;
+      background: #f5fff3;
+      border: 1px solid #46ba00;
+      border-radius: 21px;
+      padding: 20px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      > li {
+        position: relative;
+        padding-left: 22px;
+
+        &:before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: currentColor;
+          left: 0;
+          top: 8px;
+        }
+      }
+    }
+  }
+  h1, h2 {
+    font-weight: 500;
+    font-size: 79px;
+    line-height: 1.13;
+    margin-bottom: 18px;
+    color: #51ad1a;
   }
 
-  &__img-wrap {
-    position: relative;
-    width: 75%;
-    height: 415px;
-    img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
+  h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.19;
+    color: #1f1f1f;
+    margin-bottom: 9px;
+  }
+
+  h4, h5 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.16;
+    color: #9a9a9a;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 22px;
+    &:last-child{
+      margin-bottom: 0;
     }
   }
 }
 
-
-  .swiper-slide-visible.swiper-slide-active {
-    .diseases__thumb {
-      opacity: .85;
-    }
-  }
+//.disease {
+//  &__thumb {
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//    background-position: center;
+//    width: 50%;
+//    max-width: 580px;
+//    margin-left: 60px;
+//    margin-bottom: 60px;
+//    height: 580px;
+//    float: right;
+//    background-color: mistyrose;
+//  }
+//
+//  &__img-wrap {
+//    position: relative;
+//    width: 75%;
+//    height: 415px;
+//
+//    img {
+//      height: 100%;
+//      width: 100%;
+//      object-fit: cover;
+//      left: 0;
+//      top: 0;
+//      bottom: 0;
+//      right: 0;
+//    }
+//  }
+//}
+//.swiper-slide-visible.swiper-slide-active {
+//  .diseases__thumb {
+//    opacity: .85;
+//  }
+//}

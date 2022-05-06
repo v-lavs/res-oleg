@@ -1163,15 +1163,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 0 50%;
   transition: all .35s;
-  animation: flying 25s ease-in-out -6s infinite;
+  animation: flying 13s ease-in-out -5.33333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 45s ease-in-out -6s infinite;
+  animation: flying 43s ease-in-out -0.4s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -33s ease-in-out -4.4s infinite;
+  animation: flying -25s ease-in-out -4.46667s infinite;
 }
 
 .btn {
@@ -3388,40 +3388,75 @@ sup {
   margin-bottom: 18px;
 }
 
-.disease__thumb {
+.disease-article .content-block {
+  margin-bottom: 55px;
+}
+
+.disease-article .lists-block {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 50%;
-  max-width: 580px;
-  margin-left: 60px;
-  margin-bottom: 60px;
-  height: 580px;
-  float: right;
-  background-color: mistyrose;
+  justify-content: space-between;
 }
 
-.disease__img-wrap {
+.disease-article .lists-block ul {
+  max-width: 527px;
+  width: 45%;
+  background: #f5fff3;
+  border: 1px solid #46ba00;
+  border-radius: 21px;
+  padding: 20px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.disease-article .lists-block ul > li {
   position: relative;
-  width: 75%;
-  height: 415px;
+  padding-left: 22px;
 }
 
-.disease__img-wrap img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.disease-article .lists-block ul > li:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: currentColor;
   left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  top: 8px;
 }
 
-.swiper-slide-visible.swiper-slide-active .diseases__thumb {
-  opacity: .85;
+.disease-article h1,
+.disease-article h2 {
+  font-weight: 500;
+  font-size: 79px;
+  line-height: 1.13;
+  margin-bottom: 18px;
+  color: #51ad1a;
+}
+
+.disease-article h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.19;
+  color: #1f1f1f;
+  margin-bottom: 9px;
+}
+
+.disease-article h4,
+.disease-article h5 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.16;
+  color: #9a9a9a;
+  margin-bottom: 12px;
+}
+
+.disease-article p {
+  margin-bottom: 22px;
+}
+
+.disease-article p:last-child {
+  margin-bottom: 0;
 }
 
 .specialists .section-intro {
