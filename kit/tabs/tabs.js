@@ -3,7 +3,7 @@ const tabLink = $('.tabs__nav-link');
 tabLink.on('click', function (e) {
     $('.tabs__nav-link').removeClass('active');
     $(this).addClass('active');
-
+    $($(this).attr('href')).addClass('active');
 });
 
 const tabContentItem = $('.tabs__content-item');
