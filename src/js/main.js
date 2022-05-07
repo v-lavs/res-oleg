@@ -330,40 +330,6 @@ $(document).ready(function () {
     });
 
 
-    //---------------------------------------------------------
-
-
-    //
-    //     animateDiv('.diseases__img');
-    //     animateDiv('.diseases__img_1');
-    //     animateDiv('.diseases__img_2');
-    //     animateDiv('.diseases__img_3');
-    //
-    //
-    // function makeNewPosition(){
-    //
-    //     // Get viewport dimensions (remove the dimension of the div)
-    //     let  $diseasesThumb = $('.diseases__thumb')
-    //     let h = $diseasesThumb.height() - 150;
-    //     let w = $diseasesThumb.width() - 150;
-    //
-    //     let nh = Math.floor(Math.random() * h);
-    //     let nw = Math.floor(Math.random() * w);
-    //
-    //     return [nh,nw];
-    //
-    // }
-    //
-    // function animateDiv(myclass){
-    //     var newq = makeNewPosition();
-    //     $(myclass).animate({ top: newq[0], left: newq[1] },  1000,   function(){
-    //         animateDiv(myclass);
-    //     });
-    //
-    // };
-    //
-    // window.requestAnimationFrame(animateDiv);
-
     $(window).on('scroll', function () {
         if ((window.innerHeight + $(window).scrollTop() + 400) >= $(document).outerHeight()) {
             $('.disclaimer').addClass('text-white');
