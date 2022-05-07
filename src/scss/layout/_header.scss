@@ -177,7 +177,7 @@
   right: 0;
   bottom: 0;
   background-color: #000;
-  opacity: .5;
+  opacity: .4;
   z-index: 800;
 }
 
@@ -250,16 +250,3 @@
     width: 52px;
   }
 }
-
-.backdrop {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
-  opacity: .3;
-  z-index: 500;
-}
-
