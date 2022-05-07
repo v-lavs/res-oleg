@@ -1163,15 +1163,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 0 50%;
   transition: all .35s;
-  animation: flying 14s ease-in-out -5.13333s infinite;
+  animation: flying 29s ease-in-out -3.2s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 16s ease-in-out -8.2s infinite;
+  animation: flying 29s ease-in-out -8s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -22s ease-in-out -7.2s infinite;
+  animation: flying -39s ease-in-out -8.66667s infinite;
 }
 
 .btn {
@@ -1279,7 +1279,7 @@ sup {
 .menu__item {
   font-weight: 600;
   font-size: 15px;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000;
@@ -1297,7 +1297,7 @@ sup {
 .menu__link {
   position: relative;
   display: block;
-  padding: 5px 0;
+  padding: 18px 0;
   transition: background-color .5s;
 }
 
@@ -1334,7 +1334,8 @@ sup {
   text-transform: none;
   background: #ffffff;
   border-radius: 9px;
-  top: calc(100% + 18px);
+  top: 100%;
+  box-shadow: 0 0 53px rgba(0, 0, 0, 0.1);
   left: 0;
   right: 0;
   z-index: 2;
@@ -1527,11 +1528,11 @@ sup {
 
 .accordion .open-panel {
   position: absolute;
-  display: flex;
   width: 44px;
   height: 44px;
-  bottom: 16px;
   right: 0;
+  top: calc(50% + 8px);
+  transform: translateY(50%);
 }
 
 .accordion .open-panel:after,
@@ -1561,7 +1562,7 @@ sup {
 .accordion .panel__heading {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 120px 0 15px;
   transition: .7s;
   color: #000000;
@@ -1580,9 +1581,9 @@ sup {
 }
 
 .accordion .panel__title {
-  margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 37px;
+  line-height: 1;
   color: #000000;
 }
 
@@ -1793,6 +1794,7 @@ sup {
   width: 50px;
   padding: 0 3px;
   font-size: 15px;
+  line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -2046,6 +2048,7 @@ sup {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .reasons__img {
@@ -3064,6 +3067,12 @@ sup {
   border: 1px solid #54c42d;
   border-radius: 22px;
   padding: 30px 47px;
+  transition: .5s;
+}
+
+.scientific-works__link:hover,
+.scientific-works__link:focus {
+  box-shadow: 0 0 58px #c6ffa4;
 }
 
 .scientific-works__title {
@@ -3103,7 +3112,7 @@ sup {
 
 .app-method {
   font-feature-settings: 'pnum' on, 'lnum' on;
-  padding-bottom: 116px;
+  padding-bottom: 167px;
 }
 
 .app-method .heading {
@@ -3302,7 +3311,7 @@ sup {
 .section-effect {
   display: flex;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .section-effect__content {
@@ -3646,6 +3655,7 @@ sup {
 
 .application .section-intro__header {
   width: 40%;
+  padding-top: 123px;
   margin-bottom: 63px;
   float: left;
 }
@@ -3673,6 +3683,7 @@ sup {
   max-width: 710px;
   width: 100%;
   text-align: center;
+  color: #6B6B6B;
   margin: 0 auto;
 }
 
@@ -3743,6 +3754,37 @@ sup {
 
 .application .advantages__text {
   padding: 0 25px;
+}
+
+.application .indication .text {
+  max-width: 440px;
+  width: 100%;
+  font-size: 19px;
+  color: #959595;
+}
+
+.application .product-line {
+  padding-bottom: 216px;
+}
+
+.application .product-line .sub-title {
+  max-width: 100%;
+}
+
+.application .product-line .heading,
+.application .product-line .sub-title {
+  text-align: left;
+  margin-left: 0;
+}
+
+.sars .product-line .sub-title {
+  max-width: 100%;
+}
+
+.sars .product-line .heading,
+.sars .product-line .sub-title {
+  text-align: left;
+  margin-left: 0;
 }
 
 @media only screen and (max-width: 1440px) {

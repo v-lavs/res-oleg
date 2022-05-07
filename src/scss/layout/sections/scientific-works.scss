@@ -28,6 +28,11 @@
     border: 1px solid #54c42d;
     border-radius: 22px;
     padding: 30px 47px;
+    transition: .5s;
+    &:hover,
+    &:focus{
+      box-shadow: 0 0 58px #c6ffa4;
+    }
   }
   &__title{
     font-weight: 600;

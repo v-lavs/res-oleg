@@ -4,6 +4,7 @@
 
     &__header {
       width: 40%;
+      padding-top: 123px;
       margin-bottom: 63px;
       float: left;
     }
@@ -31,6 +32,7 @@
       max-width: 710px;
       width: 100%;
       text-align: center;
+      color: #6B6B6B;
       margin: 0 auto;
     }
 
@@ -104,4 +106,40 @@
     }
   }
 
+  .indication {
+    .text {
+      max-width: 440px;
+      width: 100%;
+      font-size: 19px;
+      color: #959595;
+    }
+  }
+
+  .product-line {
+    padding-bottom: 216px;
+
+    .sub-title {
+      max-width: 100%;
+    }
+
+    .heading,
+    .sub-title {
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+}
+
+.sars{
+  .product-line{
+    .sub-title {
+      max-width: 100%;
+    }
+
+    .heading,
+    .sub-title {
+      text-align: left;
+      margin-left: 0;
+    }
+  }
 }

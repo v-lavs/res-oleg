@@ -3,12 +3,11 @@
 
   .open-panel {
     position: absolute;
-    display: flex;
     width: 44px;
     height: 44px;
-   bottom: 16px;
     right: 0;
-
+    top: calc(50% + 8px);
+    transform: translateY(50%);
     &:after,
     &:before {
       position: absolute;
@@ -37,7 +36,7 @@
     &__heading {
       position: relative;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       padding: 120px 0 15px;
       transition: .7s;
       color: #000000;
@@ -56,9 +55,9 @@
     }
 
     &__title {
-      margin: 0 0 15px 0;
       font-weight: 400;
       font-size: 37px;
+      line-height: 1;
       color: #000000;
     }
 
