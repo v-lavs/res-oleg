@@ -44,12 +44,13 @@ $(document).ready(function () {
     location.hash = '';
     if (smoothScroll[1] != undefined) {
         $('html, body').animate({scrollTop: $(smoothScroll).offset().top}, 1500);
-    };
+    }
+    ;
 
     $('a[href*="#"]')
         .not('[href="#"]')
         .not('[href="#0"]')
-        .click(function(event) {
+        .click(function (event) {
             if (
                 location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
                 &&
@@ -61,21 +62,20 @@ $(document).ready(function () {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 2000, function() {
-                           let $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) {
+                    }, 2000, function () {
+                        let $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) {
                             return false;
                         } else {
-                            $target.attr('tabindex','-1');
+                            $target.attr('tabindex', '-1');
                             $target.focus();
-                        };
+                        }
+                        ;
                     });
                 }
             }
         });
-
-
 
 
     //SLIDER
