@@ -1114,6 +1114,10 @@ sup {
   font-size: 26px;
 }
 
+.text_xl {
+  font-size: 65px;
+}
+
 @keyframes flying {
   0% {
     transform: translate(0, 0) rotate(0deg);
@@ -1163,15 +1167,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 0 50%;
   transition: all .35s;
-  animation: flying 12s ease-in-out -5.66667s infinite;
+  animation: flying 20s ease-in-out -5.6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 40s ease-in-out -0.93333s infinite;
+  animation: flying 20s ease-in-out -3.6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -29s ease-in-out -6.86667s infinite;
+  animation: flying -22s ease-in-out -1.13333s infinite;
 }
 
 .btn {
@@ -3774,6 +3778,50 @@ sup {
 .sars .product-line .sub-title {
   text-align: left;
   margin-left: 0;
+}
+
+.page-404 {
+  padding: 100px 0;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+}
+
+.page-404 .d-flex {
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.page-404 .part {
+  width: 50%;
+}
+
+.page-404 .part_left {
+  font-size: 350px;
+  letter-spacing: 0.05em;
+  color: #46ba00;
+}
+
+.page-404 .part_right {
+  padding-left: 165px;
+}
+
+.page-404 .block-link {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+  padding-top: 190px;
+}
+
+.page-404 .block-link p {
+  margin-bottom: 30px;
+}
+
+.page-404 .text_xl {
+  font-weight: 500;
+  margin-bottom: 44px;
 }
 
 @media only screen and (max-width: 1440px) {

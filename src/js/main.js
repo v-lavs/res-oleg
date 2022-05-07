@@ -44,24 +44,37 @@ $(document).ready(function () {
     location.hash = '';
     if (smoothScroll[1] != undefined) {
         $('html, body').animate({scrollTop: $(smoothScroll).offset().top}, 1500);
-};
+    };
 
-    function smoothScrollToAnchor(selector) {
-        $(selector).on('click', function (event) {
-            let anchor = $.attr(this, 'href')
-
-            if (anchor.match(/^#/) && anchor !== '#') {
-                event.preventDefault()
-                let offsetSize = $("header").innerHeight();
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
-                }, 1500)
+    $('a[href*="#"]')
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                let target = $(this.hash);
+                target = target.length ? target : $('[id=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 2000, function() {
+                           let $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) {
+                            return false;
+                        } else {
+                            $target.attr('tabindex','-1');
+                            $target.focus();
+                        };
+                    });
+                }
             }
-        })
+        });
 
-    }
-
-    smoothScrollToAnchor('.menu__link');
 
 
 

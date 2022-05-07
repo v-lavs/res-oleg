@@ -1,3 +1,37 @@
-.page-404{
+.page-404 {
+  padding: 100px 0;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  .d-flex{
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .part {
+    width: 50%;
+    &_left{
+      font-size: 350px;
+      letter-spacing: 0.05em;
+      color: #46ba00;
+    }
+    &_right{
+      padding-left: 165px;
+    }
+  }
 
+  .block-link {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    color: #000000;
+    padding-top: 190px;
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  .text_xl{
+    font-weight: 500;
+    margin-bottom: 44px;
+  }
 }
