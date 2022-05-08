@@ -1,5 +1,32 @@
 .page-disease {
+  position: relative;
   padding-top: 118px;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background: linear-gradient(15deg, #61DB36 0%, #FFFFFF 100%);
+    filter: blur(40px);
+    opacity: 0.86;
+  }
+
+  &:before {
+    width: 254px;
+    height: 254px;
+    right: -8%;
+    top: 30%;
+    z-index: -1;
+  }
+
+  &:after {
+    width: 703px;
+    height: 680px;
+    left: -30%;
+    top: 17%;
+    z-index: -1;
+  }
 
   .top-content {
     align-items: center;
@@ -55,6 +82,7 @@
       }
 
     }
+
     &__img {
       position: absolute;
       width: 62%;
@@ -89,6 +117,8 @@
 }
 
 .disease-article {
+  padding-bottom: 65px;
+
   .content-block {
     margin-bottom: 55px;
   }

@@ -1167,15 +1167,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 52s ease-in-out -1.26667s infinite;
+  animation: flying 40s ease-in-out -4.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 16s ease-in-out -1.6s infinite;
+  animation: flying 22s ease-in-out -3.2s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -28s ease-in-out -6.13333s infinite;
+  animation: flying -22s ease-in-out -2.73333s infinite;
 }
 
 .btn {
@@ -3405,7 +3405,34 @@ sup {
 }
 
 .page-disease {
+  position: relative;
   padding-top: 118px;
+}
+
+.page-disease:before,
+.page-disease:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  background: linear-gradient(15deg, #61DB36 0%, #FFFFFF 100%);
+  filter: blur(40px);
+  opacity: 0.86;
+}
+
+.page-disease:before {
+  width: 254px;
+  height: 254px;
+  right: -8%;
+  top: 30%;
+  z-index: -1;
+}
+
+.page-disease:after {
+  width: 703px;
+  height: 680px;
+  left: -30%;
+  top: 17%;
+  z-index: -1;
 }
 
 .page-disease .top-content {
@@ -3490,6 +3517,10 @@ sup {
   width: 17%;
   top: 64%;
   left: 37%;
+}
+
+.disease-article {
+  padding-bottom: 65px;
 }
 
 .disease-article .content-block {
