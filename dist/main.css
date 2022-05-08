@@ -1013,6 +1013,8 @@ sup {
 }
 
 .dynamic-content ol {
+  margin-top: 30px;
+  margin-bottom: 30px;
   counter-reset: list;
   font-size: 17px;
 }
@@ -1023,17 +1025,23 @@ sup {
 
 .dynamic-content ol li::before {
   content: counter(list) ". ";
+  color: currentColor;
 }
 
 .dynamic-content table {
   width: 100%;
   font-feature-settings: 'pnum' on, 'lnum' on;
   margin-bottom: 43px;
+  table-layout: auto;
   caption-side: top;
 }
 
+.dynamic-content table.tl-fixed {
+  table-layout: fixed;
+}
+
 .dynamic-content table td {
-  padding: 11px 30px;
+  padding: 15px 30px;
   border: 1px solid #cfcfcf;
   text-align: center;
 }
@@ -1048,8 +1056,8 @@ sup {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  padding: 11px 30px;
-  white-space: nowrap;
+  padding: 15px 30px;
+  border: 1px solid #cfcfcf;
 }
 
 .dynamic-content table caption {
@@ -1061,6 +1069,10 @@ sup {
   padding-bottom: 25px;
   color: #46BA00;
   text-align: left;
+}
+
+.dynamic-content img {
+  margin: 56px 0;
 }
 
 .dynamic-content img.align-right {
@@ -1167,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 40s ease-in-out -4.73333s infinite;
+  animation: flying 75s ease-in-out -5s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 22s ease-in-out -3.2s infinite;
+  animation: flying 22s ease-in-out -8.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -22s ease-in-out -2.73333s infinite;
+  animation: flying -39s ease-in-out -3.13333s infinite;
 }
 
 .btn {
@@ -3359,7 +3371,7 @@ sup {
 }
 
 .article__header {
-  max-width: 950px;
+  max-width: 1018px;
   width: 100%;
 }
 
@@ -3377,6 +3389,7 @@ sup {
 
 .article .block-imgs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -3396,7 +3409,14 @@ sup {
   min-height: 84px;
 }
 
+.article .block-imgs + img {
+  width: 45%;
+  max-width: 503px;
+}
+
 .article__author {
+  max-width: 650px;
+  width: 100%;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.23;

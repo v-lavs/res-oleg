@@ -4,7 +4,7 @@
   font-feature-settings: 'pnum' on, 'lnum' on;
 
   &__header {
-    max-width: 950px;
+    max-width: 1018px;
     width: 100%;
   }
 
@@ -22,6 +22,7 @@
 
   .block-imgs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     figure {
       display: table;
@@ -37,9 +38,15 @@
         min-height: 84px;
       }
     }
+    + img{
+      width: 45%;
+      max-width: 503px;
+    }
   }
 
   &__author {
+    max-width: 650px;
+    width: 100%;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.23;
