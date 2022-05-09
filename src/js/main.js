@@ -218,7 +218,7 @@ $(document).ready(function () {
 //    ANIMATION
 
     setTimeout(function () {
-        const sectionWaypoints = $('.anim-page').waypoint({
+        const sectionWaypoints = $('.anim-section').waypoint({
             handler: function () {
                 $(this.element).addClass('active-anim');
             },

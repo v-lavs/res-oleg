@@ -1179,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 75s ease-in-out -5s infinite;
+  animation: flying 31s ease-in-out -1.93333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 22s ease-in-out -8.73333s infinite;
+  animation: flying 20s ease-in-out -10.13333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -39s ease-in-out -3.13333s infinite;
+  animation: flying -32s ease-in-out -7.66667s infinite;
 }
 
 .btn {
@@ -2160,7 +2160,8 @@ sup {
 }
 
 .product-card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   max-width: 540px;
 }
@@ -2187,12 +2188,18 @@ sup {
   transform: rotate(30deg);
 }
 
+.product-card__body {
+  position: relative;
+  height: 100%;
+}
+
 .product-card__thumb {
   position: absolute;
   display: flex;
   bottom: 0;
   right: 0;
-  width: 34vw;
+  width: 50vw;
+  max-width: 653px;
   z-index: 0;
 }
 
@@ -2311,7 +2318,7 @@ sup {
   background-color: #54c32d;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: contain;
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -2510,7 +2517,7 @@ sup {
   line-height: 1.18;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .banner__link.to-left {
@@ -3865,6 +3872,12 @@ sup {
   margin-bottom: 44px;
 }
 
+@media screen and (max-width: 1660px) {
+  .banner__link-text {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .container {
     max-width: 1280px;
@@ -3877,6 +3890,15 @@ sup {
 
   .header__logo-site {
     max-width: 104px;
+  }
+
+  .banner {
+    background: red;
+  }
+
+  .banner__link.to-left,
+  .banner__link {
+    transform: translateX(-50%);
   }
 }
 

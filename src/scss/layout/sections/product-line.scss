@@ -27,7 +27,8 @@
 }
 
 .product-card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   max-width: 540px;
 
@@ -56,12 +57,18 @@
 
   }
 
+  &__body{
+    position: relative;
+    height: 100%;
+  }
+
   &__thumb {
     position: absolute;
     display: flex;
     bottom: 0;
     right: 0;
-    width: 34vw;
+    width: 50vw;
+    max-width: 653px;
     z-index: 0;
   }
 
