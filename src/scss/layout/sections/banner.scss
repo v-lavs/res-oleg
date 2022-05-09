@@ -23,6 +23,9 @@ border-bottom:2px solid #eaeaea;
   &__wrap-img {
     position: relative;
   }
+  &__block_mob{
+    display: none;
+  }
 
   &__img-shadow {
     position: absolute;
@@ -71,10 +74,37 @@ border-bottom:2px solid #eaeaea;
 
 @include respond-to($xl){
   .banner{
-    background: red;
     &__link.to-left,
     &__link{
       transform: translateX(-50%);
+    }
+  }
+}
+@include respond-to($md){
+  .banner{
+    padding-bottom: 96px;
+    border: none;
+    .overlay{
+      display: none;
+    }
+   &__block_mob{
+     display: block;
+   }
+    &__wrap-img.banner__wrap-img_desk{
+      display: none;
+    }
+    &__link{
+      position: static;
+      display: block;
+      transition: color .5s;
+      transform: none;
+      text-align: center;
+      color: #cfcfcf;
+      padding-top: 20px;
+      &:hover,
+      &:focus{
+        color: #46ba00;
+      }
     }
   }
 }

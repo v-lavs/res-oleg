@@ -1,6 +1,6 @@
 .burger {
   display: none;
-  width: 35px;
+  width: 50px;
   background-color: transparent;
   border: none;
 
@@ -10,7 +10,7 @@
     width: 100%;
     background-color: #000000;
     height: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
 
     &:last-child {
       margin-bottom: 0;
@@ -190,6 +190,11 @@
     &__logo-site {
       max-width: 104px;
     }
+
+    .lang-switch {
+      font-size: 12px;
+    }
+
   }
 }
 
@@ -197,21 +202,21 @@
 
   .burger {
     display: block !important;
+    z-index: 1100;
   }
   .header__nav {
-    padding-top: 117px;
+    padding-top: 177px;
     padding-bottom: 110px;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    max-width: 420px;
     width: 100%;
     max-height: 100%;
     overflow-y: auto;
     text-align: left;
-    background-color: $white;
+    background-color: #ffffff;
     transition: transform .5s;
     transform: translateX(-100%);
     z-index: 999;
@@ -223,6 +228,9 @@
     .btn-close {
       display: block !important;
     }
+  }
+  .header__logo {
+    z-index: 1100;
   }
   .nav-bar {
     display: flex;
@@ -238,6 +246,16 @@
       }
     }
   }
+  .header__logo-site {
+    display: none;
+  }
+  .header__logo-site_mob {
+    filter: contrast(0.5);
+  }
+  .header .lang-switch {
+    font-size: 22px;
+    z-index: 1100;
+  }
 }
 
 
@@ -248,5 +266,15 @@
   }
   .header__logo {
     width: 52px;
+  }
+  .header .lang-switch {
+    font-size: 22px;
+  }
+  .burger {
+    width: 35px;
+
+    .line {
+      margin-bottom: 4px;
+    }
   }
 }

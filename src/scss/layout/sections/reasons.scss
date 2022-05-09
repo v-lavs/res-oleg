@@ -145,10 +145,41 @@
   }
 }
 
-.application{
-  .bg-green:after{
+.application {
+  .bg-green:after {
     height: 1129px;
   }
 }
 
+@include respond-to($md) {
+  .reasons {
+    background-position: right bottom 2.5%;
 
+    &:before {
+      width: 241px;
+      height: 345px;
+    }
+
+    &.bg-green:after {
+      display: none;
+    }
+
+    .mouse-parallax__bg:nth-child(1),
+    .mouse-parallax__bg:nth-child(2) {
+      display: none !important;
+    }
+
+    &__content {
+      display: block;
+
+      .part_left {
+        width: 50%;
+      }
+
+      .part_right {
+        width: 100%;
+        padding-top: 0;
+      }
+    }
+  }
+}

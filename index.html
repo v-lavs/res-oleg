@@ -32,7 +32,7 @@
             </a>
 
             <nav class="header__nav">
-                <button class="btn-close"></button>
+
                 <ul class="menu">
                     <li class="menu__item dropdown">
                         <a href="#" class="menu__link">Резістол</a>
@@ -57,7 +57,7 @@
                         </ul>
                     </li>
                     <li class="menu__item">
-                        <a href="sars.html" class="menu__link">грві</a>
+                        <a href="sars.html" class="menu__link">ГРВІ</a>
                     </li>
                     <li class="menu__item">
                         <a href="specialists.html" class="menu__link">Спеціалістам</a>
@@ -65,7 +65,7 @@
                     <li class="menu__item">
                         <a href="#" class="menu__link">Де купити?</a>
                     </li>
-                    <li class="menu__item dropdown">
+                    <li class="menu__item dropdown ">
                         <a href="#" class="menu__link">Статті</a>
                         <ul class="sub-menu">
                             <li class="sub-menu__item">
@@ -139,7 +139,7 @@
         <section class="banner">
             <div class="overlay"></div>
             <div class="container">
-                <div class="banner__wrap-img">
+                <div class="banner__wrap-img banner__wrap-img_desk">
                     <img src="assets/img/shadow-img1.png" alt="" class="banner__img-shadow">
                     <img src="assets/img/banner1.png" alt="" class="banner__img">
                     <div class="banner__link to-left">
@@ -156,6 +156,24 @@
                             Розчин
                         </div>
                     </div>
+                </div>
+                <div class="banner__block_mob">
+                    <div class="banner__wrap-img">
+                        <img src="assets/img/resistol-13-1a.png" alt="">
+                    </div>
+                    <a href="application-tab.html" class="banner__link">
+                        <span class="big-text">Резістол</span><br>
+                        Таблетки
+                    </a>
+                </div>
+                <div class="banner__block_mob">
+                    <div class="banner__wrap-img">
+                        <img src="assets/img/resistol-А3-1a.png" alt="">
+                    </div>
+                    <a href="application-syrop.html" class="banner__link">
+                        <span class="big-text">Резістол</span><br>
+                        сироп
+                    </a>
                 </div>
             </div>
         </section>
@@ -422,52 +440,53 @@
                         </li>
                         <li class="diseases__item diseases__item_empty"></li>
                     </ul>
-                </div>
-                <div class="wrap-slider">
-                    <!--swiper-->
-                    <div class="swiper diseases-slider" id="sliderDiseases">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide diseases__slide">
-                                <div id="diseasesThumb" class="diseases__thumb animated">
-                                    <img src="assets/img/diseases/diseases1a.svg" alt=""
-                                         class="diseases__img diseases__img_1">
-                                    <img src="assets/img/diseases/diseases1b.svg" alt=""
-                                         class="diseases__img diseases__img_2">
-                                    <img src="assets/img/diseases/diseases1c.svg" alt=""
-                                         class="diseases__img diseases__img_3">
+                    <div class="wrap-slider">
+                        <!--swiper-->
+                        <div class="swiper diseases-slider" id="sliderDiseases">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide diseases__slide">
+                                    <div id="diseasesThumb" class="diseases__thumb animated">
+                                        <img src="assets/img/diseases/diseases1a.svg" alt=""
+                                             class="diseases__img diseases__img_1">
+                                        <img src="assets/img/diseases/diseases1b.svg" alt=""
+                                             class="diseases__img diseases__img_2">
+                                        <img src="assets/img/diseases/diseases1c.svg" alt=""
+                                             class="diseases__img diseases__img_3">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide diseases__slide">
-                                <div class="diseases__thumb">
-                                    <img src="assets/img/diseases/diseases2.png" alt="" class="diseases__img">
+                                <div class="swiper-slide diseases__slide">
+                                    <div class="diseases__thumb">
+                                        <img src="assets/img/diseases/diseases2.png" alt="" class="diseases__img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide diseases__slide">
-                                <div class="diseases__thumb">
-                                    <img src="assets/img/diseases/diseases3.png" alt="" class="diseases__img">
+                                <div class="swiper-slide diseases__slide">
+                                    <div class="diseases__thumb">
+                                        <img src="assets/img/diseases/diseases3.png" alt="" class="diseases__img">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="swiper-slide diseases__slide">
-                                <div class="diseases__thumb">
-                                    <img src="assets/img/diseases/diseases4.png" alt="" class="diseases__img">
+                                <div class="swiper-slide diseases__slide">
+                                    <div class="diseases__thumb">
+                                        <img src="assets/img/diseases/diseases4.png" alt="" class="diseases__img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide diseases__slide">
-                                <div class="diseases__thumb">
-                                    <img src="assets/img/diseases/diseases5.png" alt="" class="diseases__img">
+                                <div class="swiper-slide diseases__slide">
+                                    <div class="diseases__thumb">
+                                        <img src="assets/img/diseases/diseases5.png" alt="" class="diseases__img">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide diseases__slide">
-                                <div class="diseases__thumb">
-                                    <img src="assets/img/diseases/diseases6.png" alt="" class="diseases__img">
+                                <div class="swiper-slide diseases__slide">
+                                    <div class="diseases__thumb">
+                                        <img src="assets/img/diseases/diseases6.png" alt="" class="diseases__img">
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -480,23 +499,30 @@
                 <div class="text">
                     Лікування препаратом Резістол* призводить до швидкого послаблення таких симптомів як:
                 </div>
-                <div class="indication__list">
-                    <a href="sars.html" class="indication__link">
-                        <div class="indication__thumb"
-                             style="background-image: url(assets/img/indication/ind1.svg);"></div>
-                    </a>
-                    <a href="sars.html" class="indication__link">
-                        <div class="indication__thumb"
-                             style="background-image: url(assets/img/indication/ind2.svg);"></div>
-                    </a>
-                    <a href="sars.html" class="indication__link">
-                        <div class="indication__thumb"
-                             style="background-image: url(assets/img/indication/ind3.svg);"></div>
-                    </a>
-                    <a href="sars.html" class="indication__link">
-                        <div class="indication__thumb"
-                             style="background-image: url(assets/img/indication/ind4.svg);"></div>
-                    </a>
+                <div class="wrap-slider">
+                    <!--swiper-->
+                    <div class="swiper indication-slider">
+                        <div class="swiper-wrapper indication__list">
+                            <a href="sars.html" class="swiper-slide indication__link indication__link_1">
+                                <div class="indication__thumb"
+                                     style="background-image: url(assets/img/indication/ind1.svg);"></div>
+                            </a>
+                            <a href="sars.html" class="swiper-slide indication__link indication__link_2">
+                                <div class="indication__thumb"
+                                     style="background-image: url(assets/img/indication/ind2.svg);"></div>
+                            </a>
+                            <a href="sars.html" class="swiper-slide indication__link indication__link_3">
+                                <div class="indication__thumb"
+                                     style="background-image: url(assets/img/indication/ind3.svg);"></div>
+                            </a>
+                            <a href="sars.html" class="swiper-slide indication__link indication__link_4">
+                                <div class="indication__thumb"
+                                     style="background-image: url(assets/img/indication/ind4.svg);"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>

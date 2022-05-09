@@ -42,6 +42,15 @@
   }
 }
 
+@include respond-to($lg){
+  .heading {
+
+    &_md {
+      font-size: 40px;
+    }
+  }
+}
+
 
 
 

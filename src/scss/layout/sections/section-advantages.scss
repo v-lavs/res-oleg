@@ -6,6 +6,10 @@
     color: #46ba00;
     margin-bottom: 27px;
   }
+
+  .big-text {
+    font-size: 70px;
+  }
 }
 
 .advantages {
@@ -40,5 +44,66 @@
     margin: 0 auto 10px;
     border-radius: 50%;
     box-shadow: 0 0 53px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@include respond-to($lg) {
+  .section-advantages {
+    .slogan {
+      font-size: 50px;
+    }
+
+    .big-text {
+      font-size: 55px;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .section-advantages {
+    .slogan {
+      order: -1;
+      font-size: 35px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .advantages {
+    position: relative;
+    display: block;
+    width: 420px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    &:before{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 150vw;
+      top: 0;
+      left: 0;
+      transform: translateX(-50%);
+      height: 1827px;
+      background: linear-gradient(0deg, rgba(94, 226, 47, 0) 0%, #48BF00 100%);
+      z-index: -1;
+    }
+    &__item {
+      max-width: 420px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+    }
+
+    &__icon {
+      flex-shrink: 0;
+    }
+
+    &__text {
+      padding-left: 30px;
+      text-align: left;
+    }
   }
 }

@@ -28,16 +28,8 @@ $(document).ready(function () {
 
     $('.burger').click(function (e) {
         e.preventDefault();
-        nav.addClass('open');
-        jQuery('.backdrop').fadeIn();
+        nav.toggleClass('open');
     });
-
-    $('.btn-close, .backdrop').click(function (e) {
-        e.preventDefault();
-        nav.removeClass('open');
-        jQuery('.backdrop').fadeOut();
-    });
-
 
     //SMOOTH SCROLL
     let smoothScroll = location.hash;
@@ -105,10 +97,11 @@ $(document).ready(function () {
 
         // DESTROY SLIDER INSTANCES
 
-        if ($(window).outerWidth() <= 1180) {
+        if ($(window).outerWidth() <= 991) {
             if (!productList && productSelector) {
                 productList = new Swiper(".product-list", {
                     spaceBetween: 30,
+                    slidesPerView: 1,
                     pagination: {
                         el: ".swiper-pagination",
                         clickable: true,
@@ -272,6 +265,10 @@ $(document).ready(function () {
                     spaceBetween: 30,
                     slidesPerView: 'auto',
                     initialSlide: 1,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
                     on: {
                         init: setActive
                     }
@@ -286,6 +283,29 @@ $(document).ready(function () {
 
     initTabsSlider();
 
+
+    function indicationSlider() {
+        let indicationSlider;
+        if ($('.indication-slider').length) {
+            if ($(window).width() <= 991) {
+                indicationSlider = new Swiper('.indication-slider', {
+                    spaceBetween: 60,
+                    slidesPerView: 'auto',
+                    initialSlide: 1,
+                    centeredSlides: true,
+                    loop: true,
+                    pagination: {
+                        el: '.indication .wrap-slider .swiper-pagination',
+                        clickable: true,
+                    },
+                });
+            } else {
+                destroySwiper(indicationSlider);
+            }
+        }
+    }
+
+    indicationSlider();
     //ACCORDION
 
     $('.accordion .panel__heading').on('click', function () {
