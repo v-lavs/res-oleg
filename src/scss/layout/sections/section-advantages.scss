@@ -68,6 +68,7 @@
 
     .big-text {
       font-size: 45px;
+      display: block;
     }
 
     .container {
@@ -75,7 +76,7 @@
       flex-direction: column;
     }
   }
-  .advantages {
+  .home .advantages {
     position: relative;
     display: block;
     max-width: 420px;
@@ -139,7 +140,6 @@
 
       .big-text {
         font-size: 34px;
-        display: block;
       }
     }
   }

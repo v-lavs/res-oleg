@@ -1179,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 89s ease-in-out -4.66667s infinite;
+  animation: flying 47s ease-in-out -4.46667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 40s ease-in-out -3.8s infinite;
+  animation: flying 46s ease-in-out -4s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -20s ease-in-out -1.93333s infinite;
+  animation: flying -33s ease-in-out -7.6s infinite;
 }
 
 .btn {
@@ -3191,6 +3191,7 @@ sup {
 
 .card-method__header {
   width: 100%;
+  margin-bottom: 54px;
 }
 
 .card-method__title {
@@ -3203,7 +3204,6 @@ sup {
   display: inline-block;
   font-size: 24px;
   color: #4a4a4a;
-  margin-bottom: 54px;
 }
 
 .card-method__body {
@@ -3240,6 +3240,20 @@ sup {
   line-height: 1.17;
   font-weight: 500;
   text-align: left;
+}
+
+.card-method .col_5 .show-mob {
+  display: none;
+  color: #52cf26;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.16;
+}
+
+.card-method .col_5 .show-mob .big {
+  display: block;
+  font-size: 25px;
+  color: #46ba00;
 }
 
 .card-method .col_7 {
@@ -3362,29 +3376,6 @@ sup {
 
 .section-effect__wrap-img_mob {
   display: none;
-}
-
-.section-effect__wrap-img img {
-  max-width: 100%;
-}
-
-.section-effect {
-  display: flex;
-  align-items: center;
-}
-
-.section-effect__content {
-  flex: 0 0 100%;
-}
-
-.section-effect__body {
-  width: 60%;
-}
-
-.section-effect__wrap-img {
-  flex: 0 0 40%;
-  padding-right: 6.5%;
-  transform: translateX(-100%);
 }
 
 .section-effect__wrap-img img {
@@ -4190,6 +4181,83 @@ sup {
     max-width: 703px;
     height: 667px;
   }
+
+  .app-method__list {
+    margin: 0 -40px;
+  }
+
+  .card-method {
+    padding: 0 40px;
+    width: 50%;
+  }
+
+  .card-method .col_7 {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .card-method .hide-mob {
+    display: none !important;
+  }
+
+  .card-method .show-mob {
+    display: block !important;
+  }
+
+  .card-method .col_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 195px;
+    width: 70%;
+    text-align: left;
+  }
+
+  .card-method__body {
+    min-height: 270px;
+  }
+
+  .card-method__title {
+    font-size: 37px;
+  }
+
+  .card-method .col .icon.amount {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-method .col .icon {
+    width: 86px;
+    height: 86px;
+  }
+
+  .card-method .time {
+    margin-left: 0;
+  }
+
+  .card-method .time:not(:first-child) {
+    margin-top: -23px;
+  }
+
+  .card-method .time .icon:before {
+    width: 56px;
+    height: 56px;
+  }
+
+  .card-method .time .icon {
+    margin-left: 0;
+  }
+
+  .application .advantages {
+    padding-bottom: 44px;
+  }
+
+  .application .section-intro__wrap-img {
+    padding-top: 64%;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -4215,6 +4283,10 @@ sup {
     max-width: 720px;
   }
 
+  .home .reasons.bg-green:after {
+    display: none;
+  }
+
   .reasons {
     background-position: right bottom 2.5%;
   }
@@ -4222,10 +4294,6 @@ sup {
   .reasons:before {
     width: 241px;
     height: 345px;
-  }
-
-  .reasons.bg-green:after {
-    display: none;
   }
 
   .reasons .mouse-parallax__bg:nth-child(2) {
@@ -4281,7 +4349,7 @@ sup {
     padding-top: 23px;
   }
 
-  .btn_main:first-child:before {
+  .btn_main:nth-child(2):before {
     display: none;
   }
 
@@ -4370,6 +4438,7 @@ sup {
 
   .section-advantages .big-text {
     font-size: 45px;
+    display: block;
   }
 
   .section-advantages .container {
@@ -4377,7 +4446,7 @@ sup {
     flex-direction: column;
   }
 
-  .advantages {
+  .home .advantages {
     position: relative;
     display: block;
     max-width: 420px;
@@ -4386,7 +4455,7 @@ sup {
     margin: 0 auto;
   }
 
-  .advantages:before {
+  .home .advantages:before {
     position: absolute;
     content: '';
     display: block;
@@ -4399,18 +4468,18 @@ sup {
     z-index: -1;
   }
 
-  .advantages__item {
+  .home .advantages__item {
     max-width: 420px;
     display: flex;
     align-items: center;
     color: #ffffff;
   }
 
-  .advantages__icon {
+  .home .advantages__icon {
     flex-shrink: 0;
   }
 
-  .advantages__text {
+  .home .advantages__text {
     padding-left: 30px;
     text-align: left;
   }
@@ -4445,6 +4514,40 @@ sup {
   .section-SARS .diseases__thumb {
     width: 550px;
     height: 550px;
+  }
+
+  .application .section-intro .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .application .section-intro__header {
+    padding-top: 80px;
+  }
+
+  .application .section-intro .big-text {
+    font-size: 47px;
+  }
+
+  .application .section-intro__header,
+  .application .section-intro__wrap-img {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .application .section-intro__wrap-img {
+    padding-top: 80%;
+  }
+
+  .application .section-intro__text {
+    margin-bottom: 60px;
+  }
+
+  .application .advantages {
+    width: 100%;
+    max-width: 100%;
+    order: 1;
   }
 }
 
@@ -4579,6 +4682,91 @@ sup {
 
   .banner .big-text {
     font-size: 27px;
+  }
+
+  .app-method__list {
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  .card-method {
+    width: 100%;
+    padding: 23px 0 40px;
+  }
+
+  .card-method:after {
+    height: 1px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+  }
+
+  .card-method__header {
+    margin-bottom: 17px;
+  }
+
+  .card-method__body {
+    min-height: 0;
+    height: auto;
+  }
+
+  .card-method__title {
+    font-size: 23px;
+    display: inline-block;
+  }
+
+  .card-method__subtitle {
+    font-size: 23px;
+    font-weight: 500;
+  }
+
+  .app-method {
+    padding-bottom: 100px;
+  }
+
+  .app-method__text {
+    display: none;
+  }
+
+  .app-method .heading {
+    margin-bottom: 0;
+  }
+
+  .section-effect__wrap-img {
+    display: none;
+  }
+
+  .section-effect__wrap-img_mob {
+    display: block;
+    width: 100%;
+  }
+
+  .section-effect__body {
+    width: 100%;
+  }
+
+  .section-effect .heading_md {
+    margin-bottom: 30px;
+  }
+
+  .application .section-intro__footer {
+    flex-wrap: wrap;
+    padding: 0 34px;
+    margin-bottom: 77px;
+  }
+
+  .application .section-intro__footer .btn:last-child {
+    width: 100%;
+    max-width: 360px;
+    order: -1;
+    margin-bottom: 13px;
+  }
+
+  .application .section-intro__footer .btn:nth-child(2) {
+    margin-right: 0;
   }
 }
 
@@ -4856,7 +5044,6 @@ sup {
 
   .section-advantages .slogan .big-text {
     font-size: 34px;
-    display: block;
   }
 
   .section-SARS {

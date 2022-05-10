@@ -202,7 +202,7 @@
       padding-top: 23px;
     }
   }
-  .btn_main:first-child:before {
+  .btn_main:nth-child(2):before {
     display: none;
   }
 }

@@ -176,16 +176,15 @@
 }
 
 @include respond-to($md) {
+  .home .reasons.bg-green:after {
+    display: none;
+  }
   .reasons {
     background-position: right bottom 2.5%;
 
     &:before {
       width: 241px;
       height: 345px;
-    }
-
-    &.bg-green:after {
-      display: none;
     }
 
     .mouse-parallax__bg:nth-child(2) {
