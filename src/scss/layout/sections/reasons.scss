@@ -201,6 +201,14 @@
       }
     }
   }
+  .ball_lg{
+    width: 380px;
+    height: 380px;
+  }
+  .ball_sm{
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @include respond-to($sm) {

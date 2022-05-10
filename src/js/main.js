@@ -122,6 +122,7 @@ $(document).ready(function () {
         clearTimeout(resizeId);
         resizeId = setTimeout(handleResponsive, 500);
         initTabsSlider();
+        indicationSlider();
     });
 
     //ACTIONS SLIDER

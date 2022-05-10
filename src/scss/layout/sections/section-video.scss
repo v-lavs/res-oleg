@@ -1,4 +1,5 @@
 .section-video {
+  background-image: url(../assets/img/sec-video.png);
   background-repeat: no-repeat;
   background-position: center bottom 120px;
   background-size: cover;
@@ -81,6 +82,11 @@
 
 @include respond-to($sm) {
   .section-video {
+    padding-top: 225px;
+    //background-position: 0 38px;
+    //background-size: 270px 296px;
+    background: url(../assets/img/bg-mob-video-1.png)  0 38px /270px 296px no-repeat,
+    url(../assets/img/bg-mob-video-2.png)  right  72px /157px 147px no-repeat;
     padding-bottom: 150px
   }
   .desktop {
