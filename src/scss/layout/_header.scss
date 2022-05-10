@@ -267,7 +267,7 @@
     width: 52px;
   }
   .header .lang-switch {
-    font-size: 22px;
+    font-size: 18px;
   }
   .burger {
     width: 35px;
@@ -279,7 +279,6 @@
 }
 
 @include respond-to($xs) {
-
   .header{
     padding-top: 0;
     padding-left: 0;

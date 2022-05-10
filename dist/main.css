@@ -1179,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 109s ease-in-out -1.93333s infinite;
+  animation: flying 89s ease-in-out -4.66667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 56s ease-in-out -8.93333s infinite;
+  animation: flying 40s ease-in-out -3.8s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -37s ease-in-out -1.6s infinite;
+  animation: flying -20s ease-in-out -1.93333s infinite;
 }
 
 .btn {
@@ -4493,7 +4493,7 @@ sup {
   }
 
   .header .lang-switch {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .burger {
@@ -4934,5 +4934,43 @@ sup {
   .desktop {
     min-height: 220px;
     margin: 0 -13px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .heading,
+  .heading_md {
+    font-size: 30px;
+  }
+
+  .reasons__item {
+    padding-left: 68px;
+  }
+
+  .reasons__icon {
+    width: 65px;
+  }
+
+  .btn_main {
+    font-size: 15px;
+  }
+
+  .section-video {
+    background: url(../assets/img/bg-mob-video-1.png) 0 38px/220px 246px no-repeat, url(../assets/img/bg-mob-video-2.png) right 72px/107px 97px no-repeat;
+  }
+
+  .diseases__item {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .section-SARS .wrap-slider {
+    width: 223px;
+    height: 223px;
+  }
+
+  .section-SARS .diseases__thumb {
+    width: 200px;
+    height: 200px;
   }
 }

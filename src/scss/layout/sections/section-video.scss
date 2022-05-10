@@ -131,3 +131,11 @@
     margin: 0 -13px;
   }
 }
+
+@media screen and (max-width: 360px){
+  .section-video{
+    background: url(../assets/img/bg-mob-video-1.png) 0 38px/220px 246px no-repeat,
+    url(../assets/img/bg-mob-video-2.png) right 72px/107px 97px no-repeat;
+  }
+
+}
