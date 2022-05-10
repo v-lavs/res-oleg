@@ -264,5 +264,19 @@
   }
   .product-line {
     padding-bottom: 114px;
+
+    .heading {
+      text-align: left;
+    }
+
+    .sub-title {
+      text-align: left;
+      display: none;
+    }
+  }
+  .product-list {
+    .swiper-pagination {
+      bottom: 140px;
+    }
   }
 }

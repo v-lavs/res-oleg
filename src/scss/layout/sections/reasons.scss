@@ -231,9 +231,13 @@
 
 @include respond-to($xs) {
   .reasons__content {
+    background-image: url(../assets/img/bg-mob-reasons1.png);
+    background-repeat: no-repeat;
+    background-position: right top 100px;
+    background-size: auto;
     .part_left {
       position: relative;
-      padding-bottom: 40px;
+      padding-bottom: 55px;
     }
 
     .part_right {
@@ -247,11 +251,12 @@
     &__icon {
       width: 90px;
       top: 0;
+      left: -5px;
       transform: translateY(0%);
     }
 
     &__item {
-      padding-left: 113px;
+      padding-left: 100px
     }
 
     &__title {
@@ -262,6 +267,11 @@
 
     &__text {
       font-size: 15px;
+      padding: 10px 0 0 0;
+    }
+
+    &__block{
+      padding-top: 100px;
     }
 
     .header {
@@ -279,7 +289,7 @@
 
     .swiper-pagination {
       display: block;
-      bottom: 22px;
+      bottom: 37px;
     }
     .swiper-pagination-bullets .swiper-pagination-bullet{
       border: 1px solid #ffffff;
@@ -288,6 +298,29 @@
         background-color: #ffffff;
       }
     }
+  }
 
+  .ball_sm{
+    width: 157px;
+    height: 156px;
+    top: 14%;
+  }
+  .ball_lg{
+    width: 280px;
+    height: 270px;
+    background: linear-gradient(15deg, #61DB36 0%, #FFFFFF 100%);
+    mix-blend-mode: soft-light;
+    filter: blur(40px);
+    left: -30%;
+  }
+}
+@include respond-to($xxs){
+  .reasons{
+    .heading {
+      font-size: 33px;
+    }
+    .part_left{
+      width: 100%;
+    }
   }
 }

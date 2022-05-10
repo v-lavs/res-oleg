@@ -135,3 +135,17 @@
   }
 
 }
+
+@include respond-to($xs) {
+  .banner {
+    padding-top: 60px;
+    &__link {
+      font-size: 19px;
+    }
+
+    .big-text {
+      font-size: 27px;
+    }
+  }
+
+}

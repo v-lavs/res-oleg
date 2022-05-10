@@ -114,18 +114,32 @@
   }
 }
 
-@include respond-to($xs){
-  .advantages__icon {
-    width: 72px;
-    height: 72px;
-    background-size: 40px 40px;
+@include respond-to($xs) {
+  .advantages {
+    &__icon {
+      width: 72px;
+      height: 72px;
+      background-size: 40px 40px;
+    }
+
+    &__item {
+      padding-left: 0;
+      padding-right: 0;
+
+      &:nth-child(3) {
+        .advantages__icon {
+          background-size: 49px 49px;
+        }
+      }
+    }
   }
-  .advantages__item{
-    padding-left: 0;
-    padding-right: 0;
-    &:nth-child(3){
-      .advantages__icon {
-        background-size: 49px 49px;
+  .section-advantages {
+    .slogan {
+      font-size: 18px;
+
+      .big-text {
+        font-size: 34px;
+        display: block;
       }
     }
   }

@@ -145,17 +145,17 @@
     width: auto;
     transition: all .45s;
 
-    &_1 {
+    &.diseases__img_1 {
       top: 15%;
       left: 33%;
     }
 
-    &_2 {
+    &.diseases__img_2 {
       left: 14%;
       top: 36%;
     }
 
-    &_3 {
+    &.diseases__img_3 {
       top: 64%;
       left: 37%;
     }
@@ -171,6 +171,7 @@
 @include respond-to($lg) {
   .section-SARS {
     padding-bottom: 190px;
+
     .part_left {
       width: 35%;
       padding-right: 30px;
@@ -184,6 +185,21 @@
       left: 11%;
       top: 17%;
       max-width: 55%;
+
+      &.diseases__img_1 {
+        top: 15%;
+        left: 33%;
+      }
+
+      &.diseases__img_2 {
+        left: 14%;
+        top: 36%;
+      }
+
+      &.diseases__img_3 {
+        top: 64%;
+        left: 37%;
+      }
     }
 
     .wrap-slider {
@@ -196,6 +212,7 @@
 @include respond-to($md) {
   .section-SARS {
     padding-bottom: 115px;
+
     .d-flex {
       flex-wrap: wrap;
     }
@@ -229,11 +246,13 @@
 @include respond-to($xs) {
   .section-SARS {
     padding-top: 0;
-    &.bg-grey{
-      &:before{
+
+    &.bg-grey {
+      &:before {
         content: none;
       }
     }
+
     .wrap-slider {
       width: 256px;
       height: 256px;
@@ -250,13 +269,16 @@
       left: 6%;
       top: 9%;
       max-width: 70%;
-      &_1{
-        max-width:  120px;
+
+      &.diseases__img_1 {
+        max-width: 120px;
       }
-      &_2{
+
+      &.diseases__img_2 {
         max-width: 80px;
       }
-      &_3{
+
+      &.diseases__img_3 {
         max-width: 54px;
       }
     }
@@ -264,7 +286,8 @@
   .diseases__item {
     font-size: 23px;
     margin-bottom: 30px;
-    &:before{
+
+    &:before {
       left: -16px;
     }
   }

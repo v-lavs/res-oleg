@@ -183,7 +183,7 @@ $(document).ready(function () {
 
         const sliderDiseases = new Swiper('#sliderDiseases', {
             slidesPerView: 1,
-            loop: true,
+            loop: false,
             autoplay: true,
             effect: 'fade',
             pagination: {
