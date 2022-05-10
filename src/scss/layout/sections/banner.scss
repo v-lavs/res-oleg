@@ -1,7 +1,8 @@
 .banner {
   position: relative;
   padding-top: 116px;
-border-bottom:2px solid #eaeaea;
+  border-bottom: 2px solid #eaeaea;
+
   .overlay {
     position: absolute;
     width: 50vw;
@@ -14,6 +15,7 @@ border-bottom:2px solid #eaeaea;
     -webkit-transition: transform 2.5s;
     transition: transform 2.5s;
     z-index: 1;
+
     &.active {
       -webkit-transform: translateX(0);
       transform: translateX(0);
@@ -23,7 +25,8 @@ border-bottom:2px solid #eaeaea;
   &__wrap-img {
     position: relative;
   }
-  &__block_mob{
+
+  &__block_mob {
     display: none;
   }
 
@@ -65,35 +68,45 @@ border-bottom:2px solid #eaeaea;
 }
 
 @media screen and (max-width: 1660px) {
-  .banner{
-    &__link-text{
+  .banner {
+    &__link-text {
       display: none;
     }
   }
 }
 
-@include respond-to($xl){
-  .banner{
+@include respond-to($xl) {
+  .banner {
     &__link.to-left,
-    &__link{
+    &__link {
       transform: translateX(-50%);
     }
   }
 }
-@include respond-to($md){
-  .banner{
+
+@include respond-to($md) {
+  .banner {
     padding-bottom: 96px;
     border: none;
-    .overlay{
+
+    .big-text {
+      font-weight: 500;
+      font-size: 45px;
+    }
+
+    .overlay {
       display: none;
     }
-   &__block_mob{
-     display: block;
-   }
-    &__wrap-img.banner__wrap-img_desk{
+
+    &__block_mob {
+      display: block;
+    }
+
+    &__wrap-img.banner__wrap-img_desk {
       display: none;
     }
-    &__link{
+
+    &__link {
       position: static;
       display: block;
       transition: color .5s;
@@ -101,10 +114,24 @@ border-bottom:2px solid #eaeaea;
       text-align: center;
       color: #cfcfcf;
       padding-top: 20px;
+
       &:hover,
-      &:focus{
+      &:focus {
         color: #46ba00;
       }
     }
   }
+}
+
+@include respond-to($sm) {
+  .banner {
+    &__link {
+      font-size: 19px;
+    }
+
+    .big-text {
+      font-size: 27px;
+    }
+  }
+
 }

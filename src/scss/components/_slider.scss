@@ -47,4 +47,22 @@
     transform: rotate(180deg);
   }
 }
-
+@include respond-to($sm){
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 41px;
+    height: 41px;
+    bottom: 0;
+    top: auto;
+  }
+  .swiper-button-prev{
+    &:before{
+      left: 4px;
+    }
+  }
+  .swiper-button-next{
+    &:before{
+      right: 4px;
+    }
+  }
+}

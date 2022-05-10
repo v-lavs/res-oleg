@@ -220,19 +220,49 @@
 
 @include respond-to($xs) {
   .product-card {
-    height: 100%;
+    height: auto;
+
+    &__body {
+      display: flex;
+      align-items: flex-end;
+    }
 
     &__thumb {
-      all: unset;
+      position: relative;
+      width: 100%;
     }
 
     .heading_round {
       display: none;
     }
 
+    .product-card__footer {
+      justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     .btn_main {
       min-width: 0;
-      width: auto;
+      width: 47%;
+      display: inline-flex;
+      min-height: 50px;
+      padding-top: 6px;
+      padding-bottom: 7px;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+
+      &:first-child:before {
+        display: none;
+      }
     }
+
+    .btn_round {
+      bottom: 152px;
+    }
+  }
+  .product-line {
+    padding-bottom: 114px;
   }
 }

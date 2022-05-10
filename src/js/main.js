@@ -100,7 +100,7 @@ $(document).ready(function () {
         if ($(window).outerWidth() <= 991) {
             if (!productList && productSelector) {
                 productList = new Swiper(".product-list", {
-                    spaceBetween: 30,
+                    spaceBetween: 60,
                     slidesPerView: 1,
                     pagination: {
                         el: ".swiper-pagination",

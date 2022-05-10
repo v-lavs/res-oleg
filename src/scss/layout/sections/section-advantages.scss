@@ -66,6 +66,10 @@
       font-size: 35px;
     }
 
+    .big-text {
+      font-size: 45px;
+    }
+
     .container {
       display: flex;
       flex-direction: column;
@@ -74,22 +78,24 @@
   .advantages {
     position: relative;
     display: block;
-    width: 420px;
+    max-width: 420px;
     padding-top: 20px;
     padding-bottom: 0;
     margin: 0 auto;
-    &:before{
+
+    &:before {
       position: absolute;
       content: '';
       display: block;
       width: 150vw;
       top: 0;
-      left: 0;
+      left: 50%;
       transform: translateX(-50%);
       height: 1827px;
       background: linear-gradient(0deg, rgba(94, 226, 47, 0) 0%, #48BF00 100%);
       z-index: -1;
     }
+
     &__item {
       max-width: 420px;
       display: flex;
@@ -104,6 +110,23 @@
     &__text {
       padding-left: 30px;
       text-align: left;
+    }
+  }
+}
+
+@include respond-to($xs){
+  .advantages__icon {
+    width: 72px;
+    height: 72px;
+    background-size: 40px 40px;
+  }
+  .advantages__item{
+    padding-left: 0;
+    padding-right: 0;
+    &:nth-child(3){
+      .advantages__icon {
+        background-size: 49px 49px;
+      }
     }
   }
 }

@@ -151,6 +151,30 @@
   }
 }
 
+@include respond-to($lg) {
+  .reasons {
+    &:before {
+      width: 134px;
+      height: 278px;
+      left: 0;
+      top: -6%;
+      z-index: 1;
+    }
+
+    &__content {
+      .part_left {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .part_right {
+        padding-top: 0;
+      }
+    }
+  }
+
+}
+
 @include respond-to($md) {
   .reasons {
     background-position: right bottom 2.5%;
@@ -164,7 +188,6 @@
       display: none;
     }
 
-    .mouse-parallax__bg:nth-child(1),
     .mouse-parallax__bg:nth-child(2) {
       display: none !important;
     }
@@ -172,14 +195,99 @@
     &__content {
       display: block;
 
-      .part_left {
-        width: 50%;
-      }
-
       .part_right {
         width: 100%;
         padding-top: 0;
       }
     }
+  }
+}
+
+@include respond-to($sm) {
+  .reasons {
+    &:before {
+      display: none;
+    }
+
+    .header {
+      width: 100%;
+      padding-bottom: 55px;
+
+    }
+
+    .part_left {
+      width: 75%;
+    }
+
+    .swiper-button-prev {
+      left: 100px;
+    }
+
+    .swiper-button-next {
+      left: 157px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .reasons__content {
+    .part_left {
+      position: relative;
+      padding-bottom: 40px;
+    }
+
+    .part_right {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  .reasons {
+    background-image: none;
+
+    &__icon {
+      width: 90px;
+      top: 0;
+      transform: translateY(0%);
+    }
+
+    &__item {
+      padding-left: 113px;
+    }
+
+    &__title {
+      font-size: 23px;
+      line-height: 1.22;
+      color: #267C08;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+
+    .header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .swiper-button-prev {
+      left: 30px;
+    }
+
+    .swiper-button-next {
+      left: 80px;
+    }
+
+    .swiper-pagination {
+      display: block;
+      bottom: 22px;
+    }
+    .swiper-pagination-bullets .swiper-pagination-bullet{
+      border: 1px solid #ffffff;
+      opacity: 1;
+      &.swiper-pagination-bullet-active{
+        background-color: #ffffff;
+      }
+    }
+
   }
 }

@@ -258,7 +258,6 @@
   }
 }
 
-
 @include respond-to($sm) {
   .header__nav {
     padding-left: 28px;
@@ -275,6 +274,19 @@
 
     .line {
       margin-bottom: 4px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+
+  .header{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    .container{
+      max-width: 100%;
+      padding: 12px 34px;
     }
   }
 }

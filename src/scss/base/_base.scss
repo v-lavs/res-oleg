@@ -291,3 +291,21 @@ sup {
     }
   }
 }
+
+@include respond-to($sm){
+  .section {
+    padding-bottom: 124px;
+  }
+  .bg-bottom{
+    &:before,
+    &:after{
+      display: none;
+    }
+  }
+}
+
+@include respond-to($xs){
+  body{
+    font-size: 16px;
+  }
+}

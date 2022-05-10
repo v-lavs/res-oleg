@@ -1179,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 80s ease-in-out -2.4s infinite;
+  animation: flying 74s ease-in-out -7.6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 42s ease-in-out -6.73333s infinite;
+  animation: flying 16s ease-in-out -5.8s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -15s ease-in-out -4.73333s infinite;
+  animation: flying -33s ease-in-out -1.6s infinite;
 }
 
 .btn {
@@ -2346,6 +2346,10 @@ sup {
   min-width: 210px;
 }
 
+.indication .btn_mob {
+  display: none;
+}
+
 .indication .wrap-slider {
   position: relative;
 }
@@ -2622,7 +2626,6 @@ sup {
   max-width: 910px;
   height: 820px;
   transform: translateX(40%);
-  width: 60%;
 }
 
 .swiper-pagination {
@@ -4008,6 +4011,7 @@ sup {
 
   .container {
     max-width: 980px;
+    padding: 0 30px;
   }
 
   .burger {
@@ -4073,6 +4077,23 @@ sup {
     z-index: 1100;
   }
 
+  .reasons:before {
+    width: 134px;
+    height: 278px;
+    left: 0;
+    top: -6%;
+    z-index: 1;
+  }
+
+  .reasons__content .part_left {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .reasons__content .part_right {
+    padding-top: 0;
+  }
+
   .product-card__thumb {
     max-width: 510px;
   }
@@ -4104,12 +4125,34 @@ sup {
     height: 140px;
   }
 
+  .specialists .section__header {
+    flex-wrap: wrap;
+  }
+
+  .specialists .wrap-btn {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .specialists .heading-inner {
+    width: 100%;
+  }
+
+  .specialists .btn_main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .section-advantages .slogan {
     font-size: 50px;
   }
 
   .section-advantages .big-text {
     font-size: 55px;
+  }
+
+  .section-SARS {
+    padding-bottom: 190px;
   }
 
   .section-SARS .part_left {
@@ -4120,9 +4163,28 @@ sup {
   .section-SARS .part_right {
     width: 65%;
   }
+
+  .section-SARS .diseases__img {
+    left: 11%;
+    top: 17%;
+    max-width: 55%;
+  }
+
+  .section-SARS .wrap-slider {
+    max-width: 703px;
+    height: 667px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
+  .heading {
+    font-size: 37px;
+  }
+
+  .heading_md {
+    font-size: 37px;
+  }
+
   .tabs .tabs__nav {
     justify-content: flex-start;
     width: auto;
@@ -4150,17 +4212,12 @@ sup {
     display: none;
   }
 
-  .reasons .mouse-parallax__bg:nth-child(1),
   .reasons .mouse-parallax__bg:nth-child(2) {
     display: none !important;
   }
 
   .reasons__content {
     display: block;
-  }
-
-  .reasons__content .part_left {
-    width: 50%;
   }
 
   .reasons__content .part_right {
@@ -4227,9 +4284,30 @@ sup {
     bottom: -27px;
   }
 
+  .indication .btn_desk {
+    display: none;
+  }
+
+  .indication .btn_mob {
+    display: inline-block;
+  }
+
+  .indication .wrap-slider {
+    margin-bottom: 52px;
+  }
+
+  .desktop {
+    min-height: 446px;
+  }
+
   .banner {
     padding-bottom: 96px;
     border: none;
+  }
+
+  .banner .big-text {
+    font-weight: 500;
+    font-size: 45px;
   }
 
   .banner .overlay {
@@ -4264,6 +4342,10 @@ sup {
     font-size: 35px;
   }
 
+  .section-advantages .big-text {
+    font-size: 45px;
+  }
+
   .section-advantages .container {
     display: flex;
     flex-direction: column;
@@ -4272,7 +4354,7 @@ sup {
   .advantages {
     position: relative;
     display: block;
-    width: 420px;
+    max-width: 420px;
     padding-top: 20px;
     padding-bottom: 0;
     margin: 0 auto;
@@ -4284,7 +4366,7 @@ sup {
     display: block;
     width: 150vw;
     top: 0;
-    left: 0;
+    left: 50%;
     transform: translateX(-50%);
     height: 1827px;
     background: linear-gradient(0deg, rgba(94, 226, 47, 0) 0%, #48BF00 100%);
@@ -4306,9 +4388,66 @@ sup {
     padding-left: 30px;
     text-align: left;
   }
+
+  .section-SARS {
+    padding-bottom: 115px;
+  }
+
+  .section-SARS .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .section-SARS .part_right {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .section-SARS .part_left {
+    width: 100%;
+    padding: 0 0 40px;
+  }
+
+  .section-SARS .wrap-slider {
+    max-width: 550px;
+    height: 550px;
+    right: -100%;
+    top: -40px;
+    transform: translateX(15%);
+    bottom: 0;
+  }
+
+  .section-SARS .diseases__thumb {
+    width: 550px;
+    height: 550px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  .section {
+    padding-bottom: 124px;
+  }
+
+  .bg-bottom:before,
+  .bg-bottom:after {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 41px;
+    height: 41px;
+    bottom: 0;
+    top: auto;
+  }
+
+  .swiper-button-prev:before {
+    left: 4px;
+  }
+
+  .swiper-button-next:before {
+    right: 4px;
+  }
+
   .popup__contact-item {
     max-width: 307px;
     flex: 0 0 100%;
@@ -4339,6 +4478,40 @@ sup {
     margin-bottom: 4px;
   }
 
+  .footer .top-row {
+    padding-top: 0;
+    padding-bottom: 38px;
+  }
+
+  .disclaimer.disclaimer_desk {
+    display: none;
+  }
+
+  .disclaimer.disclaimer_mob {
+    display: block;
+  }
+
+  .reasons:before {
+    display: none;
+  }
+
+  .reasons .header {
+    width: 100%;
+    padding-bottom: 55px;
+  }
+
+  .reasons .part_left {
+    width: 75%;
+  }
+
+  .reasons .swiper-button-prev {
+    left: 100px;
+  }
+
+  .reasons .swiper-button-next {
+    left: 157px;
+  }
+
   .product-card {
     min-height: 284px;
   }
@@ -4348,51 +4521,178 @@ sup {
     height: 250px;
   }
 
-  .section-SARS .wrap-slider {
-    position: relative;
-    right: auto;
-    top: auto;
-    width: 256px;
-    height: 256px;
-    transform: none;
-    background: red;
+  .indication {
+    padding-bottom: 0;
   }
 
-  .diseases__thumb {
-    position: relative;
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
-    background: rosybrown;
-    border-radius: 50%;
+  .indication .heading {
+    padding-right: 0;
   }
 
-  .diseases__img {
-    left: 5%;
-    top: 10%;
-    max-width: 70%;
+  .indication .btn {
+    min-width: 140px;
+  }
+
+  .specialists .sub-title {
+    font-size: 20px;
+  }
+
+  .section-video {
+    padding-bottom: 150px;
+  }
+
+  .desktop {
+    min-height: 374px;
+  }
+
+  .banner__link {
+    font-size: 19px;
+  }
+
+  .banner .big-text {
+    font-size: 27px;
   }
 }
 
 @media only screen and (max-width: 580px) {
+  body {
+    font-size: 16px;
+  }
+
   .container {
     max-width: 420px;
   }
 
+  .header {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header .container {
+    max-width: 100%;
+    padding: 12px 34px;
+  }
+
+  .footer__logo-site {
+    display: none;
+  }
+
+  .footer__logo {
+    max-width: 120px;
+  }
+
+  .reasons__content .part_left {
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .reasons__content .part_right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .reasons {
+    background-image: none;
+  }
+
+  .reasons__icon {
+    width: 90px;
+    top: 0;
+    transform: translateY(0%);
+  }
+
+  .reasons__item {
+    padding-left: 113px;
+  }
+
+  .reasons__title {
+    font-size: 23px;
+    line-height: 1.22;
+    color: #267C08;
+  }
+
+  .reasons__text {
+    font-size: 15px;
+  }
+
+  .reasons .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .reasons .swiper-button-prev {
+    left: 30px;
+  }
+
+  .reasons .swiper-button-next {
+    left: 80px;
+  }
+
+  .reasons .swiper-pagination {
+    display: block;
+    bottom: 22px;
+  }
+
+  .reasons .swiper-pagination-bullets .swiper-pagination-bullet {
+    border: 1px solid #ffffff;
+    opacity: 1;
+  }
+
+  .reasons .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #ffffff;
+  }
+
   .product-card {
-    height: 100%;
+    height: auto;
+  }
+
+  .product-card__body {
+    display: flex;
+    align-items: flex-end;
   }
 
   .product-card__thumb {
-    all: unset;
+    position: relative;
+    width: 100%;
   }
 
   .product-card .heading_round {
     display: none;
   }
 
+  .product-card .product-card__footer {
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .product-card .btn_main {
     min-width: 0;
-    width: auto;
+    width: 47%;
+    display: inline-flex;
+    min-height: 50px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .product-card .btn_main:first-child:before {
+    display: none;
+  }
+
+  .product-card .btn_round {
+    bottom: 152px;
+  }
+
+  .product-line {
+    padding-bottom: 114px;
+  }
+
+  .indication .wrap-slider {
+    margin: 0 -30px 52px;
   }
 
   .indication-slider {
@@ -4408,6 +4708,110 @@ sup {
     width: 106px;
     height: 106px;
   }
+
+  .specialists .sub-title {
+    margin-bottom: 32px;
+  }
+
+  .specialists .section__header {
+    margin-bottom: 37px;
+  }
+
+  .section-video {
+    padding-bottom: 114px;
+  }
+
+  .desktop {
+    min-height: 270px;
+    padding-bottom: 30px;
+  }
+
+  .desktop:before {
+    width: 143px;
+    height: 56px;
+  }
+
+  .desktop:after {
+    width: 100%;
+    background: radial-gradient(circle, #54C32D 80%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .desktop .wrap-video {
+    left: 13px;
+    right: 13px;
+    bottom: 13px;
+    top: 13px;
+  }
+
+  .btn_play {
+    width: 80px;
+    height: 61px;
+  }
+
+  .advantages__icon {
+    width: 72px;
+    height: 72px;
+    background-size: 40px 40px;
+  }
+
+  .advantages__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .advantages__item:nth-child(3) .advantages__icon {
+    background-size: 49px 49px;
+  }
+
+  .section-SARS {
+    padding-top: 0;
+  }
+
+  .section-SARS.bg-grey:before {
+    content: none;
+  }
+
+  .section-SARS .wrap-slider {
+    width: 256px;
+    height: 256px;
+  }
+
+  .section-SARS .diseases__thumb {
+    position: relative;
+    width: 250px;
+    height: 250px;
+  }
+
+  .section-SARS .diseases__img {
+    left: 6%;
+    top: 9%;
+    max-width: 70%;
+  }
+
+  .section-SARS .diseases__img_1 {
+    max-width: 120px;
+  }
+
+  .section-SARS .diseases__img_2 {
+    max-width: 80px;
+  }
+
+  .section-SARS .diseases__img_3 {
+    max-width: 54px;
+  }
+
+  .diseases__item {
+    font-size: 23px;
+    margin-bottom: 30px;
+  }
+
+  .diseases__item:before {
+    left: -16px;
+  }
+
+  .diseases {
+    padding-left: 13px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -4421,6 +4825,10 @@ sup {
 
   .container {
     width: 100%;
-    padding: 0 10px;
+  }
+
+  .desktop {
+    min-height: 220px;
+    margin: 0 -13px;
   }
 }

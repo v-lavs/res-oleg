@@ -51,6 +51,15 @@
   }
 }
 
+@include respond-to($md){
+  .heading {
+    font-size: 37px;
+    &_md {
+      font-size: 37px;
+    }
+  }
+}
+
 
 
 

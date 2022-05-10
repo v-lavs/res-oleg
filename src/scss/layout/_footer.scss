@@ -54,20 +54,51 @@
     height: 16vh;
     z-index: 500;
     padding: 18px 34px 19px;
+
     path {
       fill: #7ed24c;
       -webkit-transition: .5s;
       transition: .5s;
     }
-    &.text-white path{
+
+    &.text-white path {
       fill: #ffffff;
     }
+
     svg {
       width: 100%;
     }
-    &_mob{
+
+    &_mob {
       display: none;
     }
   }
 }
+
+@include respond-to($sm) {
+  .footer .top-row {
+    padding-top: 0;
+    padding-bottom: 38px;
+  }
+  .disclaimer.disclaimer_desk {
+    display: none;
+  }
+  .disclaimer.disclaimer_mob {
+    display: block;
+  }
+}
+
+@include respond-to($xs) {
+  .footer {
+    &__logo-site {
+      display: none;
+    }
+
+    &__logo {
+      max-width: 120px;
+    }
+  }
+
+}
+
 

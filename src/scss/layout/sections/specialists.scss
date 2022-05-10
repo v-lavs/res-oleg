@@ -30,12 +30,54 @@
   .text_sm {
     max-width: 800px;
     width: 100%;
+
     p {
       margin-bottom: 1.7em;
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+@include respond-to($lg) {
+  .specialists {
+    .section__header {
+      flex-wrap: wrap;
+    }
+
+    .wrap-btn {
+      width: 100%;
+      padding-top: 30px;
+    }
+
+    .heading-inner {
+      width: 100%;
+    }
+
+    .btn_main {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+@include respond-to($sm) {
+  .specialists .sub-title {
+    font-size: 20px;
+  }
+}
+
+@include respond-to($xs) {
+  .specialists {
+    .sub-title {
+      margin-bottom: 32px;
+    }
+
+    .section__header {
+      margin-bottom: 37px;
     }
   }
 }

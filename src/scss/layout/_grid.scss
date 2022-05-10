@@ -12,6 +12,7 @@
 
   @include respond-to($lg){
     max-width: 980px;
+    padding: 0 30px;
   }
   @include respond-to($md){
     max-width: 720px;
@@ -25,6 +26,6 @@
      }
   @include respond-to($xxs){
     width: 100%;
-    padding: 0 10px;
+
   }
 }
