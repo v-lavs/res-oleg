@@ -1179,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 99s ease-in-out -7.73333s infinite;
+  animation: flying 53s ease-in-out -2.2s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 41s ease-in-out -0.93333s infinite;
+  animation: flying 12s ease-in-out -10.6s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -30s ease-in-out -6.8s infinite;
+  animation: flying -34s ease-in-out -3.66667s infinite;
 }
 
 .btn {
@@ -4478,13 +4478,18 @@ sup {
   }
 
   .indication-slider {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px 0;
+    overflow: visible;
   }
 
   .indication .swiper-slide {
     transform: scale(1);
     transition: .5s;
     opacity: .3;
+    margin: 0 30px;
   }
 
   .indication .swiper-slide-active {

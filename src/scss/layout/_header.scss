@@ -199,7 +199,6 @@
 }
 
 @include respond-to($lg) {
-
   .burger {
     display: block !important;
     z-index: 1100;

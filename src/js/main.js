@@ -95,6 +95,7 @@ $(document).ready(function () {
     const productSelector = $('.product-list').get(0);
 
     function handleResponsive() {
+        initIndicationSlider();
 
         // DESTROY SLIDER INSTANCES
 
@@ -294,16 +295,15 @@ $(document).ready(function () {
     initTabsSlider();
 
 
-    function indicationSlider() {
+    function initIndicationSlider() {
         let indicationSlider;
+
         if ($('.indication-slider').length) {
-            if ($(window).width() <= 767) {
+            if (!indicationSlider && $(window).width() <= 992) {
                 indicationSlider = new Swiper('.indication-slider', {
-                    spaceBetween: 60,
                     slidesPerView: 'auto',
-                    initialSlide: 1,
                     centeredSlides: true,
-                    loop: true,
+                    initialSlide: 1,
                     pagination: {
                         el: '.indication .wrap-slider .swiper-pagination',
                         clickable: true,
@@ -315,7 +315,8 @@ $(document).ready(function () {
         }
     }
 
-    indicationSlider();
+    initIndicationSlider();
+
     //ACCORDION
 
     $('.accordion .panel__heading').on('click', function () {
