@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 72s ease-in-out -4s infinite;
+  animation: flying 81s ease-in-out -0.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 42s ease-in-out -3.26667s infinite;
+  animation: flying 57s ease-in-out -9.13333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -30s ease-in-out -1.66667s infinite;
+  animation: flying -25s ease-in-out -2s infinite;
 }
 
 .btn {
@@ -4087,6 +4087,43 @@ sup {
   }
 
   .dropdown > .menu__link:before {
+    display: none;
+  }
+
+  .splash-panel.active .sub-menu {
+    transform: translateX(0);
+  }
+
+  .splash-panel .sub-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 222;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 20px;
+    max-height: 100%;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform .5s;
+  }
+
+  .splash-panel .sub-menu a {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .splash-panel .sub-menu__item {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .splash-panel .sub-menu__item:after {
     display: none;
   }
 

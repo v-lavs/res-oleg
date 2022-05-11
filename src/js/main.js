@@ -28,7 +28,17 @@ $(document).ready(function () {
 
     $('.burger').click(function (e) {
         e.preventDefault();
-        nav.toggleClass('open');
+
+        if($('.splash-panel').hasClass('active')) {
+            $('.splash-panel').removeClass('active')
+        } else {
+            nav.toggleClass('open');
+        }
+    });
+
+    $('.splash-panel a').click(function (e) {
+        e.preventDefault();
+        $(this).parent('.splash-panel').addClass('active');
     });
 
     //SMOOTH SCROLL
@@ -137,16 +147,21 @@ $(document).ready(function () {
     if ($('.actions__slider').get(0)) {
 
         const actionsSlider = new Swiper(".actions__slider", {
-            spaceBetween: 130,
-            speed: 3000,
-            slidesPerView: 1.20,
-            slidesOffsetAfter: 250,
+            spaceBetween:30,
+            speed: 2000,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
                 renderBullet: function (index, className) {
                     return '<span class="' + className + '">' + title[index] + '</span>';
                 },
+            },
+            breakpoints:{
+              1441:   {
+                  slidesPerView: 1.20,
+                  slidesOffsetAfter: 250,
+                  spaceBetween: 130,
+              }
             },
 
             navigation: {
