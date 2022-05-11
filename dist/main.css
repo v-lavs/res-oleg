@@ -1179,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 49s ease-in-out -1.93333s infinite;
+  animation: flying 38s ease-in-out -0.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 60s ease-in-out -7.73333s infinite;
+  animation: flying 37s ease-in-out -2.4s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -32s ease-in-out -8.33333s infinite;
+  animation: flying -17s ease-in-out -2.66667s infinite;
 }
 
 .btn {
