@@ -232,6 +232,11 @@ sup {
     color: currentColor;
   }
 
+  .table-wrap {
+    width: calc(100vw - (100vw - 100%) / 2);
+    overflow-y: auto;
+  }
+
   table {
     width: 100%;
     font-feature-settings: 'pnum' on, 'lnum' on;
@@ -292,23 +297,23 @@ sup {
   }
 }
 
-@include respond-to($sm){
+@include respond-to($sm) {
   .section {
     padding-bottom: 124px;
   }
-  .bg-bottom{
+  .bg-bottom {
     &:before,
-    &:after{
+    &:after {
       display: none;
     }
   }
 }
 
-@include respond-to($xs){
-  body{
+@include respond-to($xs) {
+  body {
     font-size: 16px;
   }
-  .section{
+  .section {
     padding-bottom: 76px;
   }
 }

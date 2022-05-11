@@ -1028,6 +1028,11 @@ sup {
   color: currentColor;
 }
 
+.dynamic-content .table-wrap {
+  width: calc(100vw - (100vw - 100%) / 2);
+  overflow-y: auto;
+}
+
 .dynamic-content table {
   width: 100%;
   font-feature-settings: 'pnum' on, 'lnum' on;
@@ -1179,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 53s ease-in-out -2.2s infinite;
+  animation: flying 100s ease-in-out -1.8s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 12s ease-in-out -10.6s infinite;
+  animation: flying 39s ease-in-out -9.53333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -34s ease-in-out -3.66667s infinite;
+  animation: flying -44s ease-in-out -6.46667s infinite;
 }
 
 .btn {
