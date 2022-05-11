@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
 
     $('.splash-panel a').click(function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         $(this).parent('.splash-panel').addClass('active');
     });
 
