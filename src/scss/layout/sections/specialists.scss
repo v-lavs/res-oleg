@@ -72,6 +72,10 @@
 
 @include respond-to($xs) {
   .specialists {
+    .wrap-btn {
+      padding-top: 0;
+    }
+
     .sub-title {
       margin-bottom: 32px;
     }
