@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 81s ease-in-out -0.73333s infinite;
+  animation: flying 58s ease-in-out -2.93333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 57s ease-in-out -9.13333s infinite;
+  animation: flying 33s ease-in-out -9.66667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -25s ease-in-out -2s infinite;
+  animation: flying -16s ease-in-out -7.6s infinite;
 }
 
 .btn {
@@ -3706,11 +3706,6 @@ sup {
   padding-top: 30px;
 }
 
-.page-specialists__video-block video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  opacity: 1 !important;
-}
-
 .page-specialists__video-block .desktop:after {
   display: none;
 }
@@ -4426,11 +4421,18 @@ sup {
 
   .page-specialists .card-action__part_left {
     width: 50%;
+    padding-top: 50%;
   }
 
   .page-specialists .card-action__part_right {
     width: 50%;
     padding-right: 0;
+  }
+
+  .page-specialists .actions .swiper-button-next:before,
+  .page-specialists .actions .swiper-button-prev:before {
+    width: 25px;
+    height: 50px;
   }
 
   .page-specialists__video-block .desktop {
@@ -4820,6 +4822,15 @@ sup {
     padding-top: 28px;
   }
 
+  .page-specialists .actions {
+    padding-top: 140px;
+  }
+
+  .page-specialists .actions .swiper-button-next,
+  .page-specialists .actions .swiper-button-prev {
+    display: none;
+  }
+
   .scientific-works__list {
     margin: 0 -25px;
   }
@@ -4921,6 +4932,10 @@ sup {
 
   .tabs .tabs-slider {
     padding-bottom: 44px;
+    max-width: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tabs .tabs__nav {
@@ -4932,13 +4947,10 @@ sup {
     display: none;
   }
 
-  .tabs .tabs__nav-link .title {
-    font-size: 40px;
-  }
-
   .tabs .swiper-slide {
     width: 100%;
     max-width: 100%;
+    padding: 23px 23px 17px;
   }
 
   .accordion .panel .part {
@@ -5101,6 +5113,10 @@ sup {
     z-index: 1;
   }
 
+  .treatment-description {
+    padding-bottom: 80px;
+  }
+
   .treatment-description ul {
     font-size: 20px;
     margin-bottom: 36px;
@@ -5244,7 +5260,12 @@ sup {
   .page-specialists .mobile-heading {
     display: block;
     font-size: 37px;
-    margin-bottom: 30px;
+  }
+
+  .page-specialists .actions__slider {
+    padding-bottom: 40px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .page-specialists .card-action__part_right .heading {
@@ -5278,6 +5299,11 @@ sup {
     margin: 0 0 100px;
   }
 
+  .page-specialists .card-action__part_left:before {
+    width: 50%;
+    padding-top: 50%;
+  }
+
   .page-specialists .card-action__part_right {
     padding-left: 0;
   }
@@ -5288,10 +5314,6 @@ sup {
     bottom: auto;
     min-height: 22px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
@@ -5343,6 +5365,10 @@ sup {
   .application .section-intro__footer .btn:nth-child(2) {
     margin-right: 0;
   }
+
+  .sars .swiper-pagination {
+    display: block !important;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -5356,10 +5382,6 @@ sup {
 
   .tabs:after {
     display: none;
-  }
-
-  .tabs .tabs__nav-link {
-    padding: 23px 23px 17px;
   }
 
   .tabs .tabs__nav-link .title {
@@ -5775,18 +5797,32 @@ sup {
     min-height: 258px;
   }
 
+  .page-specialists .card-action__part_right {
+    padding-top: 52px;
+  }
+
   .page-specialists .card-action__part_left {
     margin-bottom: 50px;
   }
 
   .page-specialists .card-action__part_left:before {
-    width: 250px;
+    width: 190px;
     padding-top: 85%;
   }
 
   .page-specialists .card-action__part_left .card-action__wrap-thumb {
     width: 160px;
     height: 150px;
+  }
+
+  .card-action .mechanism-action {
+    font-size: 25px;
+    color: #46BA00;
+    margin-bottom: 8px;
+  }
+
+  .card-action__text {
+    font-size: 16px;
   }
 
   .scientific-works {
@@ -5849,19 +5885,27 @@ sup {
     color: #46ba00;
   }
 
-  .section-intro {
+  .application .product-line {
+    padding-bottom: 140px;
+  }
+
+  .application .section-effect {
+    padding-bottom: 114px;
+  }
+
+  .sars .section-intro {
     padding-top: 60px;
   }
 
-  .section-intro .part_right {
+  .sars .section-intro .part_right {
     min-height: 325px;
   }
 
-  .section-intro .btn_light {
+  .sars .section-intro .btn_light {
     display: none;
   }
 
-  .section-intro .btn_green {
+  .sars .section-intro .btn_green {
     width: 100%;
     background-color: #ffffff;
     color: #46BA00;
@@ -5869,17 +5913,17 @@ sup {
     border-color: #c4c4c4;
   }
 
-  .section-intro .btn_green:hover,
-  .section-intro .btn_green:focus {
+  .sars .section-intro .btn_green:hover,
+  .sars .section-intro .btn_green:focus {
     color: #ffffff;
     background-color: #54C42D;
   }
 
-  .section-intro .heading {
+  .sars .section-intro .heading {
     font-size: 30px;
   }
 
-  .section-intro .big-text {
+  .sars .section-intro .big-text {
     font-size: 40px;
   }
 }
@@ -5921,6 +5965,15 @@ sup {
 
   .page-specialists .scientific-works__link {
     min-height: 195px;
+  }
+
+  .page-specialists__video-block .desktop {
+    padding-bottom: 30px;
+  }
+
+  .page-specialists__video-block .desktop:before {
+    width: 113px;
+    height: 45px;
   }
 
   .page-specialists .compound {

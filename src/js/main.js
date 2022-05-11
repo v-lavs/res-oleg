@@ -147,7 +147,8 @@ $(document).ready(function () {
     if ($('.actions__slider').get(0)) {
 
         const actionsSlider = new Swiper(".actions__slider", {
-            spaceBetween:30,
+            spaceBetween:80,
+            slidesPerView: 1,
             speed: 2000,
             pagination: {
                 el: '.swiper-pagination',

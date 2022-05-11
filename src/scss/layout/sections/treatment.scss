@@ -65,6 +65,7 @@
 
 @include respond-to($sm) {
   .treatment-description {
+    padding-bottom: 80px;
     ul {
       font-size: 20px;
       margin-bottom: 36px;

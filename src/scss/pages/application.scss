@@ -241,7 +241,11 @@
       }
     }
   }
-
+.sars{
+  .swiper-pagination{
+    display: block!important;
+  }
+}
 }
 
 @include respond-to($xs) {
@@ -287,8 +291,14 @@
         color: #46ba00;
       }
     }
+    .product-line{
+      padding-bottom: 140px;
+    }
+    .section-effect{
+      padding-bottom: 114px;
+    }
   }
-  .section-intro {
+  .sars .section-intro {
     padding-top: 60px;
     .part_right {
       min-height: 325px;

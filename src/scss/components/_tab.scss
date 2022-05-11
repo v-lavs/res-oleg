@@ -118,31 +118,32 @@
   @include respond-to($sm) {
     .tabs-slider {
       padding-bottom: 44px;
+      max-width: 300px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
     .tabs__nav {
       justify-content: flex-start;
       width: auto;
-      &.bg-grey:before{
+
+      &.bg-grey:before {
         display: none;
       }
-    }
-    .tabs__nav-link .title {
-      font-size: 40px;
     }
     .swiper-slide {
       width: 100%;
       max-width: 100%;
+      padding: 23px 23px 17px;
     }
   }
 
   @include respond-to($xs) {
-    &:after{
+    &:after {
       display: none;
     }
 
     .tabs__nav-link {
-      padding: 23px 23px 17px;
-
       .title {
         font-size: 25px;
         line-height: .8;
@@ -159,7 +160,7 @@
     }
   }
   @include respond-to($xxs) {
-    .tabs__nav{
+    .tabs__nav {
       width: 209px;
       margin: 0 auto;
     }

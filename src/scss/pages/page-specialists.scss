@@ -30,10 +30,6 @@
 
   &__video-block {
     padding-top: 30px;
-    video::-webkit-media-controls-start-playback-button {
-      display: none !important;
-      opacity: 1 !important;
-    }
 
     .desktop:after {
       display: none;
@@ -110,11 +106,20 @@
 
     .card-action__part_left {
       width: 50%;
+      padding-top: 50%;
     }
 
     .card-action__part_right {
       width: 50%;
       padding-right: 0;
+    }
+
+    .actions {
+      .swiper-button-next:before,
+      .swiper-button-prev:before {
+        width: 25px;
+        height: 50px;
+      }
     }
   }
   .page-specialists__video-block .desktop {
@@ -192,6 +197,15 @@
         padding-top: 28px;
       }
     }
+
+    .actions {
+      padding-top: 140px;
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
   }
   .scientific-works {
     &__list {
@@ -219,7 +233,12 @@
     .mobile-heading {
       display: block;
       font-size: 37px;
-      margin-bottom: 30px;
+    }
+
+    .actions__slider {
+      padding-bottom: 40px;
+      width: 100%;
+      overflow: hidden;
     }
 
     .card-action__part_right .heading {
@@ -251,6 +270,11 @@
     .card-action__part_left {
       height: 300px;
       margin: 0 0 100px;
+
+      &:before {
+        width: 50%;
+        padding-top: 50%;
+      }
     }
 
     .card-action__part_right {
@@ -263,10 +287,6 @@
       bottom: auto;
       min-height: 22px;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
       transform: translateX(-50%);
 
       .swiper-pagination {
@@ -324,11 +344,15 @@
       }
     }
 
+    .card-action__part_right {
+      padding-top: 52px;
+    }
+
     .card-action__part_left {
       margin-bottom: 50px;
 
       &:before {
-        width: 250px;
+        width: 190px;
         padding-top: 85%;
       }
 
@@ -338,7 +362,14 @@
       }
     }
   }
-
+  .card-action .mechanism-action {
+    font-size: 25px;
+    color: #46BA00;
+    margin-bottom: 8px;
+  }
+  .card-action__text {
+    font-size: 16px;
+  }
   .scientific-works {
     padding-bottom: 60px;
 
@@ -368,6 +399,15 @@
 
     .scientific-works__link {
       min-height: 195px;
+    }
+
+    &__video-block .desktop {
+      padding-bottom: 30px;
+
+      &:before {
+        width: 113px;
+        height: 45px;
+      }
     }
 
     .compound {
