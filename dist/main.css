@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 100s ease-in-out -1.8s infinite;
+  animation: flying 35s ease-in-out -0.46667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 39s ease-in-out -9.53333s infinite;
+  animation: flying 50s ease-in-out -1.4s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -44s ease-in-out -6.46667s infinite;
+  animation: flying -19s ease-in-out -5.26667s infinite;
 }
 
 .btn {
@@ -3673,6 +3673,10 @@ sup {
   margin-bottom: 0;
 }
 
+.page-specialists .mobile-heading {
+  display: none;
+}
+
 .page-specialists .section-intro {
   position: relative;
   background: linear-gradient(180deg, #ffffff -10%, #84EE45, #67D625 100%);
@@ -4378,6 +4382,15 @@ sup {
     background-size: auto;
   }
 
+  .page-specialists .card-action__part_left {
+    width: 50%;
+  }
+
+  .page-specialists .card-action__part_right {
+    width: 50%;
+    padding-right: 0;
+  }
+
   .page-specialists__video-block .desktop {
     min-height: 430px;
   }
@@ -4698,6 +4711,19 @@ sup {
 
   .disease-article .top-content .part {
     width: 100%;
+  }
+
+  .page-specialists .actions__slider {
+    min-height: 500px;
+    padding: 0 0 120px;
+  }
+
+  .page-specialists .card-action .heading_md {
+    margin-bottom: 45px;
+  }
+
+  .page-specialists .card-action__part_right {
+    padding-top: 80px;
   }
 
   .page-specialists .compound {
@@ -5173,6 +5199,69 @@ sup {
     margin-bottom: 30px;
   }
 
+  .page-specialists .mobile-heading {
+    display: block;
+    font-size: 37px;
+    margin-bottom: 30px;
+  }
+
+  .page-specialists .card-action__part_right .heading {
+    display: none;
+  }
+
+  .page-specialists .actions .swiper-pagination {
+    padding: 0;
+  }
+
+  .page-specialists .actions .swiper-pagination:before {
+    top: 50%;
+    margin-top: -1px;
+  }
+
+  .page-specialists .actions .swiper-pagination .swiper-pagination-bullet {
+    font-size: 0;
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+
+  .page-specialists .actions .swiper-pagination .swiper-pagination-bullet:before {
+    top: 0;
+    transform: none;
+    left: 0;
+  }
+
+  .page-specialists .card-action__part_left {
+    height: 300px;
+    margin: 0 0 100px;
+  }
+
+  .page-specialists .card-action__part_right {
+    padding-left: 0;
+  }
+
+  .page-specialists .pagination-wrap {
+    position: absolute;
+    top: 400px;
+    bottom: auto;
+    min-height: 22px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .page-specialists .pagination-wrap .swiper-pagination {
+    bottom: auto;
+  }
+
+  .page-specialists .card-action__part_left,
+  .page-specialists .card-action__part_right {
+    width: 100%;
+  }
+
   .page-specialists__video-block .desktop {
     min-height: 356px;
   }
@@ -5636,8 +5725,26 @@ sup {
     padding-bottom: 180px;
   }
 
+  .page-specialists .pagination-wrap {
+    top: 350px;
+  }
+
   .page-specialists__video-block .desktop {
     min-height: 258px;
+  }
+
+  .page-specialists .card-action__part_left {
+    margin-bottom: 50px;
+  }
+
+  .page-specialists .card-action__part_left:before {
+    width: 250px;
+    padding-top: 85%;
+  }
+
+  .page-specialists .card-action__part_left .card-action__wrap-thumb {
+    width: 160px;
+    height: 150px;
   }
 
   .scientific-works {
