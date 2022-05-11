@@ -130,6 +130,7 @@
     align-items: center;
     width: 59%;
     padding-top: 59%;
+    float: left;
 
     &:before {
       position: absolute;
@@ -152,9 +153,10 @@
   &__part_right {
     width: 40%;
     height: auto;
-    padding-top: 120px;
+    padding-top: 160px;
     padding-right: 40px;
     padding-left: 20px;
+    float: right;
   }
 
   &__wrap-thumb {
@@ -176,23 +178,3 @@
   }
 }
 
-
-
-
-//@include respond-to($lg) {
-//  .app-method__list {
-//  margin: 0 -40px;
-//}
-//  .card-method {
-//    padding: 0 40px;
-//    &__body{
-//      align-items: baseline;
-//    }
-
-//    .col_7 {
-//      padding-left: 27px;
-//    }
-
-
-//  }
-//}

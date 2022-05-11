@@ -40,6 +40,7 @@ $(document).ready(function () {
     ;
 
     $('a[href*="#"]')
+        .not('.tabs__nav-link')
         .not('[href="#"]')
         .not('[href="#0"]')
         .click(function (event) {
@@ -122,7 +123,7 @@ $(document).ready(function () {
         clearTimeout(resizeId);
         resizeId = setTimeout(handleResponsive, 500);
         initTabsSlider();
-        indicationSlider();
+
     });
 
     //ACTIONS SLIDER
@@ -288,7 +289,7 @@ $(document).ready(function () {
     function indicationSlider() {
         let indicationSlider;
         if ($('.indication-slider').length) {
-            if ($(window).width() <= 991) {
+            if ($(window).width() <= 767) {
                 indicationSlider = new Swiper('.indication-slider', {
                     spaceBetween: 60,
                     slidesPerView: 'auto',

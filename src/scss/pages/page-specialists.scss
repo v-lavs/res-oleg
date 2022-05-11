@@ -2,7 +2,7 @@
   .section-intro {
     position: relative;
     background: linear-gradient(180deg, #ffffff -10%, #84EE45, #67D625 100%);
-    min-height: 630px;
+    padding-bottom: 340px;
     overflow: hidden;
 
     &__inner {
@@ -108,23 +108,28 @@
 
 @include respond-to($md) {
   .page-specialists {
+    .compound {
+      padding-top: 0;
+      padding-bottom: 64px;
+    }
+
     .section-intro .heading_xs {
       padding-top: 0;
       font-size: 28px;
     }
 
-    .container {
-      padding-top: 70px;
-      flex-wrap: wrap;
-    }
-
-    .part_right {
-      width: 100%;
-    }
-
     &__video-block {
       .wrap-video .description {
         display: none;
+      }
+
+      .container {
+        padding-top: 70px;
+        flex-wrap: wrap;
+      }
+
+      .part_right {
+        width: 100%;
       }
 
       .author {
@@ -149,12 +154,32 @@
           height: 66px;
         }
       }
+
+
+      .part_left {
+        width: 100%;
+        order: 1;
+        padding-top: 28px;
+      }
+    }
+  }
+  .scientific-works {
+    &__list {
+      margin: 0 -25px;
     }
 
-    .part_left {
-      width: 100%;
-      order: 1;
-      padding-top: 28px;
+    &__item {
+      padding: 0 25px;
+      margin-bottom: 70px;
+    }
+
+    &__link {
+      padding: 20px;
+    }
+
+    &__title {
+      font-size: 16px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -163,14 +188,79 @@
   .page-specialists {
     &__video-block {
       .desktop {
-        min-height: 330px;
-        padding-bottom: 50px;
-
-        &:before {
-          width: 169px;
-          height: 66px;
-        }
+        min-height: 356px;
       }
+    }
+  }
+  .scientific-works {
+    &__list {
+      margin: 0;
+    }
+
+    &__item {
+      width: 100%;
+      padding: 0;
+
+    }
+
+    &__authors {
+      height: auto;
+      min-height: 0;
+    }
+
+    &__link {
+
+      padding: 20px 7px 20px 25px;
+      font-size: 11px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .page-specialists {
+    .section-intro {
+      padding-bottom: 180px;
+    }
+
+    &__video-block {
+      .desktop {
+        min-height: 258px;
+      }
+    }
+  }
+  .scientific-works {
+    padding-bottom: 60px;
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      padding-bottom: 10px;
+    }
+
+    .heading {
+      margin-bottom: 40px;
+    }
+
+    .load-more {
+      font-size: 20px;
+    }
+  }
+}
+
+@include respond-to($xxs) {
+  .page-specialists {
+    .section-intro__inner {
+      background-size: 300% 50%;
+    }
+
+    .scientific-works__link {
+      min-height: 195px;
+    }
+
+    .compound {
+      font-size: 8px;
     }
   }
 }
