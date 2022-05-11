@@ -1179,15 +1179,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 38s ease-in-out -0.73333s infinite;
+  animation: flying 99s ease-in-out -7.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 37s ease-in-out -2.4s infinite;
+  animation: flying 41s ease-in-out -0.93333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -17s ease-in-out -2.66667s infinite;
+  animation: flying -30s ease-in-out -6.8s infinite;
 }
 
 .btn {
@@ -3531,7 +3531,7 @@ sup {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 50vw;
+  width: 100vw;
   opacity: .85;
 }
 
@@ -4657,6 +4657,39 @@ sup {
     margin-bottom: 50px;
   }
 
+  .page-disease .part_left {
+    order: 1;
+    padding-right: 0;
+    margin-top: -40px;
+  }
+
+  .page-disease .part_right {
+    margin-left: auto;
+    min-height: 0;
+    height: auto;
+  }
+
+  .page-disease .diseases {
+    position: static;
+    padding: 0;
+    width: 100%;
+  }
+
+  .page-disease .diseases__thumb {
+    max-width: 480px;
+    height: 480px;
+    margin-left: auto;
+    transform: translateX(50px);
+  }
+
+  .disease-article .top-content {
+    flex-wrap: wrap;
+  }
+
+  .disease-article .top-content .part {
+    width: 100%;
+  }
+
   .page-specialists .compound {
     padding-top: 0;
     padding-bottom: 64px;
@@ -5577,6 +5610,16 @@ sup {
 
   .treatment-description__heading {
     font-size: 30px;
+  }
+
+  .page-disease .part_left {
+    margin-top: -40px;
+  }
+
+  .page-disease .diseases__thumb {
+    max-width: 250px;
+    height: 250px;
+    transform: translateX(15px);
   }
 
   .page-specialists .section-intro {

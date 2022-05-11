@@ -189,7 +189,8 @@ $(document).ready(function () {
             autoplay: true,
             effect: 'fade',
             pagination: {
-                el: '.swiper-pagination', clickable: true,
+                el: '.swiper-pagination',
+                clickable: true,
             },
             breakpoints: {
                 992: {
@@ -197,6 +198,13 @@ $(document).ready(function () {
                     autoplay: false,
                     allowTouchMove: false,
                 }
+            }
+        });
+
+        sliderDiseases.on('slideChange', function () {
+            if ($(window).width() <= 992) {
+                $diseasesItems.removeClass('active');
+                $diseasesItems.eq(this.realIndex).addClass('active');
             }
         });
 
