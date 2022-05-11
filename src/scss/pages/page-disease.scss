@@ -203,11 +203,13 @@
       height: auto;
 
     }
-    .diseases{
+
+    .diseases {
       position: static;
       padding: 0;
       width: 100%;
-      &__thumb{
+
+      &__thumb {
         max-width: 480px;
         height: 480px;
         margin-left: auto;
@@ -226,16 +228,52 @@
   }
 }
 
-@include respond-to($xs) {
+@include respond-to($sm) {
   .page-disease {
     .part_left {
-
-      margin-top: -40px;
+      margin-top: 0;
+    }
+  }
+  .disease-article {
+    h1, h2 {
+      font-size: 55px;
     }
 
-    .diseases{
+    h3 {
+      font-size: 35px;
+    }
 
-      &__thumb{
+    .content-block {
+      margin-bottom: 50px;
+    }
+
+    .lists-block {
+      flex-wrap: wrap;
+
+      ul {
+        max-width: 100%;
+        width: 100%;
+        background: rgba(188, 188, 188, 0.1);
+      }
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .page-disease {
+    padding-top: 70px;
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    .part_left {
+      margin-bottom: 40px;
+    }
+
+    .diseases {
+
+      &__thumb {
         max-width: 250px;
         height: 250px;
         transform: translateX(15px);
@@ -243,7 +281,38 @@
     }
   }
   .disease-article {
+    h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
 
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .content-block {
+      margin-bottom: 50px;
+    }
+
+    .lists-block {
+      flex-wrap: wrap;
+
+      ul {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include respond-to($xs){
+  .page-disease{
+    .diseases__thumb {
+      max-width: 235px;
+      height: 235px;
+      transform: translateX(28px);
+    }
   }
 }
 

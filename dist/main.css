@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 35s ease-in-out -5.53333s infinite;
+  animation: flying 44s ease-in-out -0.53333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 23s ease-in-out -9.26667s infinite;
+  animation: flying 38s ease-in-out -1.2s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -39s ease-in-out -5.86667s infinite;
+  animation: flying -29s ease-in-out -1.4s infinite;
 }
 
 .btn {
@@ -5257,6 +5257,33 @@ sup {
     margin-bottom: 30px;
   }
 
+  .page-disease .part_left {
+    margin-top: 0;
+  }
+
+  .disease-article h1,
+  .disease-article h2 {
+    font-size: 55px;
+  }
+
+  .disease-article h3 {
+    font-size: 35px;
+  }
+
+  .disease-article .content-block {
+    margin-bottom: 50px;
+  }
+
+  .disease-article .lists-block {
+    flex-wrap: wrap;
+  }
+
+  .disease-article .lists-block ul {
+    max-width: 100%;
+    width: 100%;
+    background: rgba(188, 188, 188, 0.1);
+  }
+
   .page-specialists .mobile-heading {
     display: block;
     font-size: 37px;
@@ -5775,14 +5802,52 @@ sup {
     font-size: 30px;
   }
 
+  .page-disease {
+    padding-top: 70px;
+  }
+
+  .page-disease:before,
+  .page-disease:after {
+    display: none;
+  }
+
   .page-disease .part_left {
-    margin-top: -40px;
+    margin-bottom: 40px;
   }
 
   .page-disease .diseases__thumb {
     max-width: 250px;
     height: 250px;
     transform: translateX(15px);
+  }
+
+  .disease-article h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .disease-article p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .disease-article .content-block {
+    margin-bottom: 50px;
+  }
+
+  .disease-article .lists-block {
+    flex-wrap: wrap;
+  }
+
+  .disease-article .lists-block ul {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page-disease .diseases__thumb {
+    max-width: 235px;
+    height: 235px;
+    transform: translateX(28px);
   }
 
   .page-specialists .section-intro {
