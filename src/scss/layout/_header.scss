@@ -233,6 +233,11 @@
   }
   .nav-bar {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link{
+      margin-right: 52px;
+          }
 
     &__icon {
       display: block;
@@ -285,6 +290,18 @@
     .container{
       max-width: 100%;
       padding: 12px 34px;
+    }
+    &__nav{
+      padding-top: 150px;
+    }
+  }
+}
+
+@include respond-to($xxs) {
+  .header .nav-bar{
+    justify-content: space-between;
+    &__link{
+      margin: 0;
     }
   }
 }

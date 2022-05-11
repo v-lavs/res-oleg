@@ -179,6 +179,7 @@
     &.active .sub-menu {
       transform: translateX(0);
     }
+
     .sub-menu {
       position: fixed;
       bottom: 0;
@@ -201,10 +202,13 @@
         font-weight: 400;
       }
     }
+
     .sub-menu__item {
       padding-left: 0;
       padding-right: 0;
       margin-bottom: 10px;
+      color: #000000;
+
       &:after {
         display: none;
       }
@@ -215,6 +219,15 @@
 
 @include respond-to($xs) {
   .menu {
+    align-items: flex-start;
+    &__item {
+      text-align: left;
+      font-weight: 400;
+      &:nth-child(1),
+      &:nth-child(2){
+        font-weight: 600;
+      }
+    }
 
   }
 }
