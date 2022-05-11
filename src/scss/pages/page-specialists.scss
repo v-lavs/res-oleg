@@ -30,6 +30,10 @@
 
   &__video-block {
     padding-top: 30px;
+    video::-webkit-media-controls-start-playback-button {
+      display: none !important;
+      opacity: 1 !important;
+    }
 
     .desktop:after {
       display: none;
