@@ -26,11 +26,6 @@
     position: relative;
     display: block;
     padding: 18px 0;
-    transition: .35s;
-    &:hover,
-    &:focus {
-      -webkit-text-stroke: 1px #000000;
-    }
   }
 }
 
@@ -188,7 +183,6 @@
       &:focus {
         background-color: #ffffff;
         color: #54C42D;
-        -webkit-text-stroke: 1px #54C42D;
       }
     }
   }
@@ -243,7 +237,6 @@
       &:focus {
         background-color: #ffffff;
         color: #54C42D;
-        -webkit-text-stroke: 1px #54C42D;
       }
     }
   }
