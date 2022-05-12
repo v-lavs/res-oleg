@@ -52,5 +52,17 @@
   }
 }
 
+.section_anim {
+  opacity: 0;
+  -webkit-transition: all ease-in .5s;
+  transform: translateY(100px);
+}
+
+.section_in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 

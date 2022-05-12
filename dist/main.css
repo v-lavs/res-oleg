@@ -1184,15 +1184,26 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 67s ease-in-out -7.53333s infinite;
+  animation: flying 26s ease-in-out -4.86667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 39s ease-in-out -2.73333s infinite;
+  animation: flying 52s ease-in-out -2.8s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -28s ease-in-out -7.33333s infinite;
+  animation: flying -22s ease-in-out -8.13333s infinite;
+}
+
+.section_anim {
+  opacity: 0;
+  -webkit-transition: all ease-in .5s;
+  transform: translateY(100px);
+}
+
+.section_in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .btn {
@@ -3374,10 +3385,10 @@ sup {
   font-size: 20px;
 }
 
-.app-method_solution .card-method span {
-  display: inline-block;
+.app-method_solution .card-method .text_green {
+  display: block;
+  font-size: 50px;
   font-weight: 500;
-  font-size: 55px;
 }
 
 .app-method_solution .card-method .icon {

@@ -237,10 +237,9 @@ $(document).ready(function () {
 //    ANIMATION
 
     setTimeout(function () {
-        const sectionWaypoints = $('.anim-section').waypoint({
-            handler: function () {
-                $(this.element).addClass('active-anim');
-            },
+        var waypoints = $('.section_anim').waypoint(function (direction) {
+            $(this.element).addClass('section_in-view')
+        }, {
             offset: '80%'
         });
     }, 300);
@@ -296,7 +295,8 @@ $(document).ready(function () {
                         clickable: true,
                     },
                     on: {
-                        init: setActive
+                        init: setActive,
+
                     }
                 });
 
