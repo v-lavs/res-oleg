@@ -16,12 +16,7 @@ function destroySwiper(sliderInstance) {
 }
 
 $(document).ready(function () {
-    $('.banner').mousemove(function () {
-        const overlay = $('.banner .overlay');
-        if (!overlay.hasClass('active')) {
-            overlay.addClass('active');
-        }
-    });
+
 
     //MOBILE MENU
     const nav = $('.header__nav');

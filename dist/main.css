@@ -1205,15 +1205,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 33s ease-in-out -5.26667s infinite;
+  animation: flying 66s ease-in-out -1.33333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 39s ease-in-out -4.26667s infinite;
+  animation: flying 41s ease-in-out -4.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -38s ease-in-out -2.73333s infinite;
+  animation: flying -36s ease-in-out -3.13333s infinite;
 }
 
 .section_anim {
@@ -1277,7 +1277,6 @@ sup {
   height: 54px;
   border: none;
   background-image: linear-gradient(25deg, #61db36 0%, #ffffff 100%);
-  box-shadow: 0 0 40px rgba(84, 196, 45, 0.55);
 }
 
 .btn_round:before {
@@ -1291,6 +1290,11 @@ sup {
   z-index: 1;
   font-size: 65px;
   text-align: center;
+}
+
+.btn_round:hover,
+.btn_round:focus {
+  box-shadow: 0 0 40px rgba(84, 196, 45, 0.55);
 }
 
 .btn_play {
@@ -1391,7 +1395,8 @@ sup {
   box-shadow: 0 0 53px rgba(0, 0, 0, 0.1);
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
+  overflow: hidden;
 }
 
 .sub-menu__item {
@@ -1401,6 +1406,7 @@ sup {
   font-weight: 500;
   font-size: 13px;
   line-height: 1;
+  transition: background-color .5s;
 }
 
 .sub-menu__item:after {
@@ -1416,6 +1422,12 @@ sup {
 
 .sub-menu__item:last-child:after {
   display: none;
+}
+
+.sub-menu__item:hover,
+.sub-menu__item:focus {
+  background-color: #54C42D;
+  color: #ffffff;
 }
 
 .sub-menu__link {
@@ -1851,7 +1863,7 @@ sup {
 .header .lang-switch {
   position: relative;
   width: 50px;
-  padding: 0 3px;
+  padding: 18px 3px;
   font-size: 15px;
   line-height: 1;
   text-transform: uppercase;
@@ -1876,7 +1888,7 @@ sup {
   background-color: #f4f4f4;
   border-radius: 9px;
   left: 0;
-  top: calc(100% + 18px);
+  top: 100%;
   right: 0;
   z-index: 11;
 }
@@ -2175,6 +2187,8 @@ sup {
 
 .product-line {
   padding-bottom: 196px;
+  position: relative;
+  z-index: 1;
 }
 
 .product-line .heading {
@@ -2524,23 +2538,30 @@ sup {
   border-bottom: 2px solid #eaeaea;
 }
 
-.banner .overlay {
+.banner .overlay_left,
+.banner .overlay_right {
   position: absolute;
   width: 50vw;
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(270deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
-  -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  -webkit-transition: transform 2.5s;
   transition: transform 2.5s;
   z-index: 1;
 }
 
-.banner .overlay.active {
+.banner .overlay_left.active,
+.banner .overlay_right.active {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+
+.banner .overlay_right {
+  background: linear-gradient(270deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
+}
+
+.banner .overlay_left {
+  background: linear-gradient(90deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
 }
 
 .banner__wrap-img {

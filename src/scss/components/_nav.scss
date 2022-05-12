@@ -69,7 +69,8 @@
   box-shadow: 0 0 53px rgba(0, 0, 0, .1);
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
+  overflow: hidden;
 
   &__item {
     position: relative;
@@ -78,6 +79,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 1;
+    transition: background-color .5s;
 
     &:after {
       position: absolute;
@@ -92,6 +94,11 @@
 
     &:last-child:after {
       display: none;
+    }
+    &:hover,
+    &:focus{
+      background-color: #54C42D;
+      color: #ffffff;
     }
   }
 

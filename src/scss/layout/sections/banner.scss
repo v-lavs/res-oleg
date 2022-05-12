@@ -3,16 +3,14 @@
   padding-top: 116px;
   border-bottom: 2px solid #eaeaea;
 
-  .overlay {
+  .overlay_left,
+  .overlay_right {
     position: absolute;
     width: 50vw;
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(270deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
-    -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: transform 2.5s;
     transition: transform 2.5s;
     z-index: 1;
 
@@ -20,6 +18,13 @@
       -webkit-transform: translateX(0);
       transform: translateX(0);
     }
+  }
+  .overlay_right{
+    background: linear-gradient(270deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
+  }
+
+  .overlay_left{
+    background: linear-gradient(90deg, #46BA00 0%, #61DB36 0%, rgba(97, 219, 54, 0) 100%);
   }
 
   &__wrap-img {

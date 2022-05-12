@@ -78,7 +78,7 @@
   .lang-switch {
     position: relative;
     width: 50px;
-    padding: 0 3px;
+    padding: 18px 3px;
     font-size: 15px;
     line-height: 1;
     text-transform: uppercase;
@@ -102,7 +102,7 @@
       background-color: #f4f4f4;
       border-radius: 9px;
       left: 0;
-      top: calc(100% + 18px);
+      top: 100%;
       right: 0;
       z-index: 11;
     }
