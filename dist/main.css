@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 101s ease-in-out -0.4s infinite;
+  animation: flying 48s ease-in-out -5.93333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 37s ease-in-out -0.2s infinite;
+  animation: flying 28s ease-in-out -9.93333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -20s ease-in-out -3.26667s infinite;
+  animation: flying -36s ease-in-out -7.86667s infinite;
 }
 
 .btn {
@@ -4731,6 +4731,10 @@ sup {
     margin-bottom: 50px;
   }
 
+  .article {
+    padding-top: 160px;
+  }
+
   .page-disease .part_left {
     order: 1;
     padding-right: 0;
@@ -4919,6 +4923,18 @@ sup {
   .bg-bottom:before,
   .bg-bottom:after {
     display: none;
+  }
+
+  .dynamic-content img {
+    margin: 45px 0 90px;
+    width: 100%;
+  }
+
+  .dynamic-content img.align-left,
+  .dynamic-content img.align-right {
+    width: 100%;
+    float: none;
+    margin: 45px 0 90px;
   }
 
   .swiper-button-prev,
@@ -5264,6 +5280,22 @@ sup {
     margin-bottom: 30px;
   }
 
+  .article .block-imgs {
+    display: block;
+  }
+
+  .article .block-imgs figure {
+    width: 100%;
+  }
+
+  .article .block-imgs figure img {
+    margin: 0;
+  }
+
+  .article .block-imgs figure > figcaption {
+    padding-top: 0;
+  }
+
   .page-disease .part_left {
     margin-top: 0;
   }
@@ -5412,6 +5444,41 @@ sup {
 
   .section {
     padding-bottom: 76px;
+  }
+
+  .dynamic-content h1,
+  .dynamic-content h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .dynamic-content h3 {
+    font-size: 16px;
+  }
+
+  .dynamic-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .dynamic-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .dynamic-content small {
+    font-size: 10px;
+    line-height: 1.23;
+  }
+
+  .dynamic-content table {
+    table-layout: auto;
+  }
+
+  .dynamic-content table caption {
+    max-width: 300px;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .menu {
@@ -5825,6 +5892,20 @@ sup {
 
   .treatment-description__heading {
     font-size: 30px;
+  }
+
+  .article {
+    padding-top: 130px;
+  }
+
+  .article__title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .article__author {
+    font-size: 12px;
+    margin-bottom: 70px;
   }
 
   .page-disease {

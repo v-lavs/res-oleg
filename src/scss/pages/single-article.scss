@@ -24,12 +24,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     figure {
       display: table;
       padding: 20px 0;
       margin: 0 0 20px 0;
       max-width: 503px;
       width: 45%;
+
       > figcaption {
         display: table-caption;
         caption-side: bottom;
@@ -38,7 +40,8 @@
         min-height: 84px;
       }
     }
-    + img{
+
+    + img {
       width: 45%;
       max-width: 503px;
     }
@@ -52,5 +55,46 @@
     line-height: 1.23;
     color: #a5a5a5;
     margin-bottom: 100px;
+  }
+}
+
+@include respond-to($md) {
+  .article {
+    padding-top: 160px;
+  }
+}
+
+@include respond-to($sm) {
+  .article {
+    .block-imgs {
+      display: block;
+
+      figure {
+        width: 100%;
+
+        img {
+          margin: 0;
+        }
+        >figcaption {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .article {
+    padding-top: 130px;
+
+    &__title {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    &__author {
+      font-size: 12px;
+      margin-bottom: 70px;
+    }
   }
 }
