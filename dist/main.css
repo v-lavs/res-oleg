@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 48s ease-in-out -5.93333s infinite;
+  animation: flying 74s ease-in-out -0.4s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 28s ease-in-out -9.93333s infinite;
+  animation: flying 19s ease-in-out -3.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -36s ease-in-out -7.86667s infinite;
+  animation: flying -28s ease-in-out -6.06667s infinite;
 }
 
 .btn {
@@ -4086,7 +4086,8 @@ sup {
   }
 
   .splash-panel.active .sub-menu {
-    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
   }
 
   .splash-panel .sub-menu {
@@ -4103,8 +4104,9 @@ sup {
     padding: 50px 20px;
     max-height: 100%;
     overflow-y: auto;
-    transform: translateX(-100%);
-    transition: transform .5s;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s;
   }
 
   .splash-panel .sub-menu a {
