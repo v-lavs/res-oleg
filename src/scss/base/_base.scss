@@ -233,14 +233,15 @@ sup {
   }
 
   .table-wrap {
-    width: calc(100vw - (100vw - 100%) / 2);
-    overflow-y: auto;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 20px;
   }
 
   table {
     width: 100%;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    margin-bottom: 43px;
+    margin-bottom: 23px;
     table-layout: auto;
 
     &.tl-fixed {
@@ -296,6 +297,25 @@ sup {
   }
 }
 
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar{
+  top: 0;
+  height: 6px;
+  background: #46BA00;
+  border-radius: 1px;
+  &:before{
+    background: #46BA00;
+  }
+}
+
+.simplebar-track{
+  border: 1px solid #CFCFCF;
+  border-radius: 2px;
+}
+.simplebar-track.simplebar-horizontal{
+  height: 6px;
+}
+
 @include respond-to($sm) {
   .section {
     padding-bottom: 124px;
@@ -316,6 +336,14 @@ sup {
         width: 100%;
         float: none;
         margin: 45px 0 90px;
+      }
+    }
+
+    table {
+      table-layout: auto;
+
+      &.tl-fixed {
+        table-layout: auto !important;
       }
     }
   }
@@ -356,6 +384,7 @@ sup {
 
     table {
       table-layout: auto;
+
       caption {
         max-width: 300px;
         font-size: 25px;
