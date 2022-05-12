@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 33s ease-in-out -6.73333s infinite;
+  animation: flying 67s ease-in-out -7.53333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 32s ease-in-out -6.4s infinite;
+  animation: flying 39s ease-in-out -2.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -44s ease-in-out -1.4s infinite;
+  animation: flying -28s ease-in-out -7.33333s infinite;
 }
 
 .btn {
@@ -5703,8 +5703,8 @@ sup {
   }
 
   .product-card__img {
-    width: 120%;
-    height: 120%;
+    width: 110%;
+    height: 110%;
     transform: translateX(-35px);
   }
 
