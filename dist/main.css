@@ -1205,15 +1205,15 @@ sup {
 .diseases__thumb .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 44s ease-in-out -1.13333s infinite;
+  animation: flying 100s ease-in-out -4.13333s infinite;
 }
 
 .diseases__thumb .diseases__img_2 {
-  animation: flying 54s ease-in-out -3s infinite;
+  animation: flying 12s ease-in-out -10.4s infinite;
 }
 
 .diseases__thumb .diseases__img_3 {
-  animation: flying -34s ease-in-out -5.46667s infinite;
+  animation: flying -20s ease-in-out -2.4s infinite;
 }
 
 .section_anim {
