@@ -1205,15 +1205,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 78s ease-in-out -6.46667s infinite;
+  animation: flying 41s ease-in-out -6.2s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 11s ease-in-out -10.13333s infinite;
+  animation: flying 46s ease-in-out -10.06667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -30s ease-in-out -5.46667s infinite;
+  animation: flying -24s ease-in-out -3.73333s infinite;
 }
 
 .section_anim {
@@ -2032,6 +2032,7 @@ sup {
   background-repeat: no-repeat;
   background-position: right bottom -4.5%;
   background-size: 19%;
+  z-index: 1;
 }
 
 .reasons:before {
