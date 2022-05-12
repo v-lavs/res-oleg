@@ -362,7 +362,7 @@
       }
     }
   }
-  .actions .footnote{
+  .actions .footnote {
     display: none;
   }
   .card-action .mechanism-action {
@@ -402,6 +402,11 @@
 
     .scientific-works__link {
       min-height: 195px;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 63px rgba(0, 0, 0, 0.08);
+      }
     }
 
     &__video-block .desktop {

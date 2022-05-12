@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 67s ease-in-out -7.46667s infinite;
+  animation: flying 44s ease-in-out -1.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 33s ease-in-out -4.33333s infinite;
+  animation: flying 36s ease-in-out -0.66667s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -15s ease-in-out -0.2s infinite;
+  animation: flying -41s ease-in-out -8.46667s infinite;
 }
 
 .btn {
@@ -3907,10 +3907,11 @@ sup {
 }
 
 .page-404 {
-  padding: 100px 0;
   line-height: 1.17;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .page-404 .d-flex {
@@ -4457,6 +4458,18 @@ sup {
   .application .section-intro__wrap-img {
     padding-top: 64%;
   }
+
+  .page-404 .text_xl {
+    font-size: 39px;
+  }
+
+  .page-404 .part_left {
+    font-size: 256px;
+  }
+
+  .page-404 .part_right {
+    padding-left: 108px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -4916,6 +4929,23 @@ sup {
 
   .section-intro .big-text {
     font-size: 55px;
+  }
+
+  .page-404 .part {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-404 .part_right {
+    padding-left: 0;
+  }
+
+  .page-404 .part_right .text_xl {
+    margin-bottom: 0;
+  }
+
+  .page-404 .block-link {
+    padding-top: 60px;
   }
 }
 
@@ -6105,6 +6135,19 @@ sup {
   .sars .section-intro .big-text {
     font-size: 40px;
   }
+
+  .page-404 .part_right .text_xl {
+    font-size: 30px;
+  }
+
+  .page-404 .part_left {
+    font-size: 140px;
+  }
+
+  .page-404 .block-link {
+    font-size: 20px;
+    padding-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
@@ -6152,6 +6195,11 @@ sup {
 
   .page-specialists .scientific-works__link {
     min-height: 195px;
+  }
+
+  .page-specialists .scientific-works__link:hover,
+  .page-specialists .scientific-works__link:focus {
+    box-shadow: 0 0 63px rgba(0, 0, 0, 0.08);
   }
 
   .page-specialists__video-block .desktop {
