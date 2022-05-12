@@ -90,6 +90,7 @@
 
 @include respond-to($xs) {
   .footer {
+    padding-bottom: 20vh;
     &__logo-site {
       display: none;
     }
@@ -100,6 +101,9 @@
     .social-list__link{
       height: 27px;
       width: auto;
+    }
+    .disclaimer_mob{
+      height: 18vh;
     }
   }
 

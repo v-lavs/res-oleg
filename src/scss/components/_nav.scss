@@ -127,9 +127,15 @@
       font-size: 25px;
       text-transform: none;
       text-align: center;
+      font-weight: 400;
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        font-weight: 600;
       }
     }
 
@@ -222,13 +228,10 @@
 @include respond-to($xs) {
   .menu {
     align-items: flex-start;
+
     &__item {
       text-align: left;
-      font-weight: 400;
-      &:nth-child(1),
-      &:nth-child(2){
-        font-weight: 600;
-      }
     }
   }
+
 }

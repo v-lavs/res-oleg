@@ -1184,15 +1184,15 @@ sup {
 .diseases__thumb:hover .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 44s ease-in-out -1.73333s infinite;
+  animation: flying 33s ease-in-out -6.73333s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_2 {
-  animation: flying 36s ease-in-out -0.66667s infinite;
+  animation: flying 32s ease-in-out -6.4s infinite;
 }
 
 .diseases__thumb:hover .diseases__img_3 {
-  animation: flying -41s ease-in-out -8.46667s infinite;
+  animation: flying -44s ease-in-out -1.4s infinite;
 }
 
 .btn {
@@ -4036,10 +4036,16 @@ sup {
     font-size: 25px;
     text-transform: none;
     text-align: center;
+    font-weight: 400;
   }
 
   .menu__item:last-child {
     margin-bottom: 0;
+  }
+
+  .menu__item:nth-child(1),
+  .menu__item:nth-child(2) {
+    font-weight: 600;
   }
 
   .menu__link {
@@ -4136,17 +4142,25 @@ sup {
     z-index: 1100;
   }
 
+  .header__inner {
+    overflow-y: auto;
+    max-height: 100%;
+    flex-grow: 1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
   .header__nav {
-    padding-top: 177px;
-    padding-bottom: 110px;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 20px;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
     text-align: left;
     background-color: #ffffff;
     transition: opacity .5s;
@@ -5415,6 +5429,7 @@ sup {
     min-height: 22px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
   }
 
   .page-specialists .pagination-wrap .swiper-pagination {
@@ -5521,12 +5536,6 @@ sup {
 
   .menu__item {
     text-align: left;
-    font-weight: 400;
-  }
-
-  .menu__item:nth-child(1),
-  .menu__item:nth-child(2) {
-    font-weight: 600;
   }
 
   .tabs:after {
@@ -5560,7 +5569,7 @@ sup {
   }
 
   .header {
-    padding-top: 0;
+    padding-top: 8px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -5571,7 +5580,11 @@ sup {
   }
 
   .header__nav {
-    padding-top: 150px;
+    padding-top: 70px;
+  }
+
+  .footer {
+    padding-bottom: 20vh;
   }
 
   .footer__logo-site {
@@ -5585,6 +5598,10 @@ sup {
   .footer .social-list__link {
     height: 27px;
     width: auto;
+  }
+
+  .footer .disclaimer_mob {
+    height: 18vh;
   }
 
   .reasons__content {

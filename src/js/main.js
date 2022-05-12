@@ -85,7 +85,6 @@ $(document).ready(function () {
 
     if ($('.reasons__slider').get(0)) {
         const reasonsSlider = new Swiper('.reasons__slider', {
-            spaceBetween: 30,
             speed: 2000,
             // allowTouchMove: false,
             pagination: {
