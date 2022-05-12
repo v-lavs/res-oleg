@@ -216,12 +216,14 @@
     overflow-y: auto;
     text-align: left;
     background-color: #ffffff;
-    transition: transform .5s;
-    transform: translateX(-100%);
+    transition: opacity .5s;
+    opacity: 0;
+    pointer-events: none;
     z-index: 999;
 
     &.open {
-      transform: translateX(0);
+      opacity: 1;
+      pointer-events: all;
     }
 
     .btn-close {
@@ -235,9 +237,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &__link{
+
+    &__link {
       margin-right: 52px;
-          }
+    }
 
     &__icon {
       display: block;
@@ -283,24 +286,27 @@
 }
 
 @include respond-to($xs) {
-  .header{
+  .header {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
-    .container{
+
+    .container {
       max-width: 100%;
       padding: 12px 34px;
     }
-    &__nav{
+
+    &__nav {
       padding-top: 150px;
     }
   }
 }
 
 @include respond-to($xxs) {
-  .header .nav-bar{
+  .header .nav-bar {
     justify-content: space-between;
-    &__link{
+
+    &__link {
       margin: 0;
     }
   }
