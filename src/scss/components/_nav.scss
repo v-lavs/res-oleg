@@ -26,8 +26,11 @@
     position: relative;
     display: block;
     padding: 18px 0;
-    transition: background-color .5s;
-
+    transition: .35s;
+    &:hover,
+    &:focus {
+      -webkit-text-stroke: 1px #000000;
+    }
   }
 }
 
@@ -95,8 +98,9 @@
     &:last-child:after {
       display: none;
     }
+
     &:hover,
-    &:focus{
+    &:focus {
       background-color: #54C42D;
       color: #ffffff;
     }
@@ -179,6 +183,13 @@
         padding-left: 0;
         border-left: 0;
       }
+
+      &:hover,
+      &:focus {
+        background-color: #ffffff;
+        color: #54C42D;
+        -webkit-text-stroke: 1px #54C42D;
+      }
     }
   }
   .dropdown > .menu__link {
@@ -226,6 +237,13 @@
 
       &:after {
         display: none;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: #ffffff;
+        color: #54C42D;
+        -webkit-text-stroke: 1px #54C42D;
       }
     }
   }
