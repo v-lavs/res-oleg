@@ -16,7 +16,27 @@ function destroySwiper(sliderInstance) {
 }
 
 $(document).ready(function () {
+    $('.banner').mouseleave(function () {
+        $('.overlay').removeClass('active');
+        $('.banner__link').removeClass('text-white');
+    });
 
+    $('.banner').mousemove(function (e) {
+        const pos = e.pageX;
+        const windowW = $(window).width();
+        if(pos >= (windowW/2)) {
+            $('.overlay-right').addClass('active');
+            $('.overlay-left').removeClass('active');
+            $('.banner__link.to-right').addClass('text-white');
+            $('.banner__link.to-left').removeClass('text-white');
+        } else {
+            $('.overlay-left').addClass('active');
+            $('.overlay-right').removeClass('active');
+            $('.banner__link.to-left').addClass('text-white');
+            $('.banner__link.to-right').removeClass('text-white');
+
+        }
+    });
 
     //MOBILE MENU
     const nav = $('.header__nav');
