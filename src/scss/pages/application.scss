@@ -251,6 +251,10 @@
 @include respond-to($xs) {
   .application {
     .section-intro {
+      .sub-title {
+        font-weight: 400;
+      }
+
       &__footer {
         justify-content: space-between;
         padding-left: 0;
@@ -276,9 +280,13 @@
       &__text {
         display: none;
       }
+      &__wrap-img{
+        margin-bottom: 20px;
+      }
 
       &__header {
         padding-top: 0;
+        margin-bottom: 20px;
       }
 
       .heading {
