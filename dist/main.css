@@ -1205,15 +1205,15 @@ sup {
 .diseases__thumb .diseases__img {
   transform-origin: 50% 50%;
   transition: all .65s;
-  animation: flying 108s ease-in-out -7.4s infinite;
+  animation: flying 81s ease-in-out -7.06667s infinite;
 }
 
 .diseases__thumb .diseases__img_2 {
-  animation: flying 44s ease-in-out -7s infinite;
+  animation: flying 15s ease-in-out -10.4s infinite;
 }
 
 .diseases__thumb .diseases__img_3 {
-  animation: flying -15s ease-in-out -7s infinite;
+  animation: flying -31s ease-in-out -7.66667s infinite;
 }
 
 .section_anim {
@@ -4656,7 +4656,7 @@ sup {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 0;
+    padding: 40px 0;
     overflow: visible;
   }
 
@@ -4668,7 +4668,7 @@ sup {
   }
 
   .indication .swiper-slide-active {
-    transform: scale(1.25);
+    transform: scale(1.45);
     transition: .5s;
     opacity: 1;
   }
@@ -5843,12 +5843,16 @@ sup {
     bottom: 140px;
   }
 
+  .indication .text {
+    color: #959595;
+  }
+
   .indication .wrap-slider {
     margin: 0 -30px 52px;
   }
 
   .indication-slider {
-    padding: 20px 0;
+    padding: 35px 0;
   }
 
   .indication__link {
@@ -5945,6 +5949,7 @@ sup {
 
   .section-SARS {
     padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .section-SARS.bg-grey:before {
@@ -5991,6 +5996,7 @@ sup {
 
   .diseases {
     padding-left: 13px;
+    padding-bottom: 30px;
   }
 
   .signs-cold {

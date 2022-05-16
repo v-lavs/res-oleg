@@ -246,7 +246,7 @@
 @include respond-to($xs) {
   .section-SARS {
     padding-top: 0;
-
+    padding-bottom: 30px;
     &.bg-grey {
       &:before {
         content: none;
@@ -293,6 +293,7 @@
   }
   .diseases {
     padding-left: 13px;
+    padding-bottom: 30px;
   }
 }
 
