@@ -323,6 +323,9 @@
     filter: blur(40px);
     left: -30%;
   }
+  .reasons__block {
+    padding-top: 75px;
+  }
 }
 
 @include respond-to($xxs) {

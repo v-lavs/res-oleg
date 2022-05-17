@@ -251,6 +251,7 @@
 @include respond-to($xs) {
   .application {
     .section-intro {
+      padding-bottom: 30px;
       .sub-title {
         font-weight: 400;
       }
